@@ -69,7 +69,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 20,
+        "value": 27,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -102,6 +102,14 @@
       {
         "title": "Onet – Karol Nawrocki zawetował kolejne ustawy. Zwrócił się do rządu (18.12.2025)",
         "url": "https://wiadomosci.onet.pl/kraj/karol-nawrocki-zawetowal-kolejne-ustawy-zwrocil-sie-do-rzadu/f7q54pl"
+      },
+      {
+        "title": "Wetomat.pl – Lista wet prezydenta Karola Nawrockiego (stan na 27.02.2026)",
+        "url": "https://wetomat.pl/"
+      },
+      {
+        "title": "Konkret24 – Karol Nawrocki zawetował rekordową liczbę ustaw? Policzyliśmy",
+        "url": "https://konkret24.tvn24.pl/polityka/karol-nawrocki-zawetowal-rekordowa-liczbe-ustaw-policzylismy-st8881758"
       }
     ]
   },
@@ -175,7 +183,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 0,
+        "value": 3,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -194,6 +202,14 @@
       {
         "title": "Onet – Karol Nawrocki nie skorzystał z prawa łaski (7.11.2025)",
         "url": "https://wiadomosci.onet.pl/kraj/ulaskawienie-na-horyzoncie-polacy-w-sondazu-ocenili-przywilej-nawrockiego/dnm6l6g"
+      },
+      {
+        "title": "Prezydent.pl – Decyzje Prezydenta RP w sprawie prawa łaski (02.02.2026)",
+        "url": "https://www.prezydent.pl/aktualnosci/prawo-laski/2026/decyzje-prezydenta-rp-w-sprawie-prawa-laski,114327"
+      },
+      {
+        "title": "TVN24 – Prezydent Nawrocki ułaskawił trzy osoby (02.02.2026)",
+        "url": "https://tvn24.pl/polska/prezydent-karol-nawrocki-ulaskawil-trzy-osoby-znamy-uzasadnienia-st8881270"
       }
     ]
   },
@@ -267,7 +283,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 115,
+        "value": 157,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -381,7 +397,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 2,
+        "value": 4,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -412,12 +428,20 @@
         "url": "https://www.ilw.org.pl/files/pliki/ILW-album_internet.pdf"
       },
       {
-        "title": "PR24 – Wniosek Prezydenta do TK ws. delegalizacji KPP (03.12.2025)",
+        "title": "PR24 – Wniosek Prezydenta do TK ws. delegalizacji KPP (12.11.2025)",
         "url": "https://polskieradio24.pl/artykul/3616008,nawrocki-chcial-delegalizacji-tej-partii-jest-decyzja-trybunalu-konstytucyjnego"
       },
       {
         "title": "Prezydent.pl – Wniosek Prezydenta do TK ws. rozporządzenia Min. Sprawiedliwości (28.10.2025)",
         "url": "https://www.prezydent.pl/prawo/wnioski-do-tk/wniosek-do-tk-ws-rozporzadzenia-ministra-sprawiedliwosci,109371"
+      },
+      {
+        "title": "Prezydent.pl – Wniosek do TK ws. ustawy o bezpieczeństwie ruchu drogowego (22.12.2025)",
+        "url": "https://www.prezydent.pl/prawo/wnioski-do-tk/wniosek-do-trybunalu-konstytucyjnego,110189"
+      },
+      {
+        "title": "Prezydent.pl – Podpisanie ustawy budżetowej i skierowanie do TK (19.01.2026)",
+        "url": "https://www.prawo.pl/podatki/prezydent-podpisal-budzet-na-2026-rok,536834.html"
       }
     ]
   },
@@ -491,7 +515,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 13,
+        "value": 16,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -532,6 +556,10 @@
       {
         "title": "Polsat News – Karol Nawrocki złożył 13 projektów ustaw (03.12.2025)",
         "url": "https://www.polsatnews.pl/wiadomosc/2025-12-03/sejm-zadecyduje-o-prezydenckim-wecie-jest-decyzja-koalicji-w-tej-sprawie/"
+      },
+      {
+        "title": "Prezydent.pl – Inicjatywy ustawodawcze (stan na 27.02.2026)",
+        "url": "https://www.prezydent.pl/prawo/inicjatywy-ustawodawcze"
       }
     ]
   }

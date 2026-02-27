@@ -3,7 +3,7 @@
 This file is a quick-reference for AI research sessions. It summarizes all current values and sources so an AI can compare against new findings and update `presidential-stats.json`.
 
 **Data file to update:** `data/presidential-stats.json`
-**Last full review:** 2025-12-19
+**Last full review:** 2026-02-27
 
 ---
 
@@ -37,7 +37,7 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 | Komorowski (10-15) | 4 | 930 | 360 | 12 | 26 |
 | Duda (15-20) | 9 | 1066 | 94 | 10 | 31 |
 | Duda (20-25) | 10 | 784 | 52 | 51 | 31 |
-| **Nawrocki (25–)** | **20** | **115** | **0** | **2** | **13** |
+| **Nawrocki (25–)** | **27** | **157** | **3** | **4** | **16** |
 
 ---
 
@@ -54,7 +54,12 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 - https://pravda.org.pl/weto-prezydenci — pravda.org.pl veto overview
 - https://www.prezydent.pl/kancelaria/archiwum/archiwum-lecha-kaczynskiego/aktualnosci/rok-2009/zestawienie-aktywnosci-legislacyjnej-prezydentow-rp-w-latach-1995-2009 — Kancelaria Prezydenta 1995-2009
 
-**Search tips:** Nawrocki's veto count changes frequently. Check TVN24 and Onet for the latest running tally. Historical values (pre-2025) are stable.
+**New sources found (Feb 2026):**
+- https://wetomat.pl/ — Wetomat.pl live veto tracker (best single source for current count)
+- https://konkret24.tvn24.pl/polityka/karol-nawrocki-zawetowal-rekordowa-liczbe-ustaw-policzylismy-st8881758 — Konkret24 fact-check with running totals
+- https://www.prezydent.pl/prawo/ustawy-zawetowane — Official list of vetoed laws
+
+**Search tips:** Nawrocki's veto count changes frequently. Check wetomat.pl for live count, TVN24 and Onet for the latest running tally. Historical values (pre-2025) are stable.
 
 ---
 
@@ -69,7 +74,10 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 - https://wydarzenia.interia.pl/kraj/news-podsumowanie-pieciu-lat-rzadow-prezydenta-bronislawa-komorow,nId,1864061 — Komorowski summary
 - https://przegladdziennikarski.pl/wojciech-jaruzelski-poczatki-polskiej-prezydentury/ — Jaruzelski data
 
-**Search tips:** Often published alongside veto counts. prezydent.pl official site may have running totals for the active president.
+**New sources found (Feb 2026):**
+- https://www.prezydent.pl/prawo/ustawy-podpisane — Official monthly breakdown of signed laws (best primary source — count per month)
+
+**Search tips:** Count monthly from prezydent.pl/prawo/ustawy-podpisane. Aug=31, Sep=3, Oct=24, Nov=30, Dec=44, Jan 2026=15, Feb 2026=10 → total 157. Often published alongside veto counts.
 
 ---
 
@@ -84,7 +92,11 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 - https://www.wprost.pl/tygodnik/9372/fabryka-ulaskawien.html — Wprost historical analysis
 - https://wiadomosci.onet.pl/kraj/ulaskawienie-na-horyzoncie-polacy-w-sondazu-ocenili-przywilej-nawrockiego/dnm6l6g — Onet on Nawrocki pardons
 
-**Search tips:** Pardon data updates less frequently. Historical values very stable. For Nawrocki, search if he has used the pardon power yet.
+**New sources found (Feb 2026):**
+- https://www.prezydent.pl/aktualnosci/prawo-laski/2026 — Official pardon decisions page
+- https://tvn24.pl/polska/prezydent-karol-nawrocki-ulaskawil-trzy-osoby-znamy-uzasadnienia-st8881270 — First pardons (3 people, Feb 2, 2026)
+
+**Search tips:** Pardon data updates less frequently. Historical values very stable. Nawrocki pardoned 3 people on Feb 2, 2026 (his first use of pardon power). Check prezydent.pl/aktualnosci/prawo-laski/ for new decisions.
 
 ---
 
@@ -100,7 +112,12 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 - https://polskieradio24.pl/artykul/3616008,nawrocki-chcial-delegalizacji-tej-partii-jest-decyzja-trybunalu-konstytucyjnego — Nawrocki KPP motion
 - https://www.prezydent.pl/prawo/wnioski-do-tk/wniosek-do-tk-ws-rozporzadzenia-ministra-sprawiedliwosci,109371 — official TK motion page
 
-**Search tips:** Check prezydent.pl/prawo/wnioski-do-tk/ for an official list of current president's TK motions.
+**New sources found (Feb 2026):**
+- https://www.prezydent.pl/prawo/wnioski-do-tk — Official list (4 motions total as of Feb 2026)
+- Budget 2026 sent to TK (Jan 19, 2026): https://www.prawo.pl/podatki/prezydent-podpisal-budzet-na-2026-rok,536834.html
+- Road safety law sent to TK (Dec 22, 2025): https://www.prezydent.pl/prawo/wnioski-do-tk/wniosek-do-trybunalu-konstytucyjnego,110189
+
+**Search tips:** Check prezydent.pl/prawo/wnioski-do-tk/ for an official list of current president's TK motions. 4 total: Min. Sprawiedliwości regulation (Oct), KPP delegalization (Nov), road safety (Dec), budget 2026 (Jan).
 
 ---
 
@@ -116,7 +133,12 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 - https://demagog.org.pl/wypowiedzi/ktory-z-polskich-prezydentow-zglosil-najwiecej-projektow-ustaw/ — Demagog analysis
 - https://www.polsatnews.pl/wiadomosc/2025-12-03/sejm-zadecyduje-o-prezydenckim-wecie-jest-decyzja-koalicji-w-tej-sprawie/ — Nawrocki initiatives (as of 3.12.2025)
 
-**Search tips:** prezydent.pl may list submitted legislative bills. Also check Sejm website for presidential bill submissions.
+**New sources found (Feb 2026):**
+- https://www.prezydent.pl/prawo/inicjatywy-ustawodawcze — Official list (16 initiatives as of Feb 2026)
+- Latest: "Projekt ustawy o przywróceniu prawa do sądu" (Feb 19, 2026)
+- Coal mining law (Jan 13, 2026), animal protection (Dec 2, 2025)
+
+**Search tips:** prezydent.pl/prawo/inicjatywy-ustawodawcze is the canonical list. Also check Sejm website for presidential bill submissions.
 
 ---
 
