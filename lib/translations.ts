@@ -18,6 +18,7 @@ export const translations = {
     },
     total: "Łącznie",
     sources: "Źródła",
+    overview: "Przegląd",
     categories: {
       zawetowaneUstawy: "Zawetowane ustawy",
       podpisaneUstawy: "Podpisane ustawy",
@@ -49,6 +50,7 @@ export const translations = {
     },
     total: "Total",
     sources: "Sources",
+    overview: "Overview",
     categories: {
       zawetowaneUstawy: "Vetoed Laws",
       podpisaneUstawy: "Signed Laws",

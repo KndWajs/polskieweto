@@ -1,3 +1,31 @@
+export function CategoryJsonLd({ categoryName, slug }: { categoryName: string; slug: string }) {
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Statystyki Prezydentów III RP",
+        item: "https://polskieweto.pl",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: categoryName,
+        item: `https://polskieweto.pl/kategorie/${slug}`,
+      },
+    ],
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+    />
+  )
+}
+
 export function JsonLd() {
   const webSite = {
     "@context": "https://schema.org",

@@ -1,18 +1,24 @@
 "use client"
 
 import { useState } from "react"
-import { CategoryNavTabs } from "./category-nav-tabs"
-import { CategoryContent } from "./category-content"
-import { LanguageToggle } from "./language-toggle"
+import Link from "next/link"
+import { CategoryNavTabs } from "@/components/category-nav-tabs"
+import { CategoryContent } from "@/components/category-content"
+import { LanguageToggle } from "@/components/language-toggle"
 import { translations, type Language } from "@/lib/translations"
-import { CATEGORY_KEYS, CATEGORY_SLUG_MAP } from "@/lib/categories"
-import data from "@/data/presidential-stats.json"
+import { CATEGORY_KEYS, CATEGORY_SLUG_MAP, type CategoryKey } from "@/lib/categories"
 
-const DEFAULT_CATEGORY = "zawetowaneUstawy" as const
+interface CategoryPageClientProps {
+  categoryKey: CategoryKey
+  slug: string
+  categoryData: {
+    data: { id: number; name: string; image: string; value: number; party: string; term: string }[]
+    sources: { title: string; url: string }[]
+  }
+}
 
-export function StatsDashboard() {
+export function CategoryPageClient({ categoryKey, slug, categoryData }: CategoryPageClientProps) {
   const [language, setLanguage] = useState<Language>("pl")
-
   const t = translations[language]
 
   const categories = CATEGORY_KEYS.map((key) => ({
@@ -21,15 +27,15 @@ export function StatsDashboard() {
     label: t.categories[key],
   }))
 
-  const categoryData = data[DEFAULT_CATEGORY]
-
   return (
     <div className="min-h-screen bg-background">
       <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-10">
         <div className="max-w-5xl mx-auto px-4 py-6">
           <div className="flex items-start justify-between gap-4">
             <div>
-              <h1 className="text-2xl md:text-3xl font-bold text-foreground">{t.title}</h1>
+              <Link href="/" className="text-2xl md:text-3xl font-bold text-foreground hover:text-primary transition-colors">
+                {t.title}
+              </Link>
               <p className="text-muted-foreground mt-1">{t.subtitle}</p>
             </div>
             <LanguageToggle language={language} onLanguageChange={setLanguage} />
@@ -37,16 +43,19 @@ export function StatsDashboard() {
         </div>
       </header>
 
-      <main className="max-w-5xl mx-auto px-4 py-8" aria-label={language === "pl" ? "Statystyki prezydentów" : "Presidential statistics"}>
-        <div className="mb-8 text-sm text-muted-foreground leading-relaxed">
-          <p>{t.description}</p>
-        </div>
-
-        <CategoryNavTabs categories={categories} />
+      <main
+        className="max-w-5xl mx-auto px-4 py-8"
+        aria-label={language === "pl" ? "Statystyki prezydentów" : "Presidential statistics"}
+      >
+        <CategoryNavTabs
+          categories={categories}
+          activeCategory={categoryKey}
+          homeLabel={language === "en" ? "Category navigation" : undefined}
+        />
 
         <CategoryContent
-          categoryLabel={t.categories[DEFAULT_CATEGORY]}
-          categoryDescription={t.categoryDescriptions[DEFAULT_CATEGORY]}
+          categoryLabel={t.categories[categoryKey]}
+          categoryDescription={t.categoryDescriptions[categoryKey]}
           data={categoryData.data}
           sources={categoryData.sources}
           language={language}
@@ -73,7 +82,7 @@ export function StatsDashboard() {
               <a href="mailto:simplygopolska@gmail.com" className="hover:text-foreground transition-colors">
                 simplygopolska@gmail.com
               </a>
-              <span className="hidden sm:inline">•</span>
+              <span className="hidden sm:inline">&bull;</span>
               <a
                 href="https://simplygo.pl"
                 target="_blank"
@@ -82,7 +91,7 @@ export function StatsDashboard() {
               >
                 {t.footer.simplygo}
               </a>
-              <span className="hidden sm:inline">•</span>
+              <span className="hidden sm:inline">&bull;</span>
               <a
                 href="https://wajs.tech"
                 target="_blank"
