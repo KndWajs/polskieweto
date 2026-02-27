@@ -1,0 +1,538 @@
+{
+  "zawetowaneUstawy": {
+    "data": [
+      {
+        "id": 1,
+        "name": "Andrzej Duda",
+        "image": "/images/duda.jpg",
+        "value": 10,
+        "party": "PiS",
+        "term": "2020–2025"
+      },
+      {
+        "id": 2,
+        "name": "Andrzej Duda",
+        "image": "/images/duda.jpg",
+        "value": 9,
+        "party": "PiS",
+        "term": "2015–2020"
+      },
+      {
+        "id": 3,
+        "name": "Bronisław Komorowski",
+        "image": "/images/komorowski.jpg",
+        "value": 4,
+        "party": "PO",
+        "term": "2010–2015"
+      },
+      {
+        "id": 4,
+        "name": "Lech Kaczyński",
+        "image": "/images/kaczynski.jpg",
+        "value": 18,
+        "party": "PiS",
+        "term": "2005–2010"
+      },
+      {
+        "id": 5,
+        "name": "Aleksander Kwaśniewski",
+        "image": "/images/kwasniewski.jpg",
+        "value": 24,
+        "party": "SLD",
+        "term": "2000–2005"
+      },
+      {
+        "id": 6,
+        "name": "Aleksander Kwaśniewski",
+        "image": "/images/kwasniewski.jpg",
+        "value": 11,
+        "party": "SLD",
+        "term": "1995–2000"
+      },
+      {
+        "id": 7,
+        "name": "Lech Wałęsa",
+        "image": "/images/image.png",
+        "value": 27,
+        "party": "Independent",
+        "term": "1990–1995"
+      },
+      {
+        "id": 8,
+        "name": "Wojciech Jaruzelski",
+        "image": "/images/jaruzelski.jpg",
+        "value": 1,
+        "party": "PZPR",
+        "term": "1989–1990"
+      },
+      {
+        "id": 9,
+        "name": "Karol Nawrocki",
+        "image": "/images/nawrocki.jpg",
+        "value": 20,
+        "party": "PiS",
+        "term": "2025-08-06"
+      }
+    ],
+    "sources": [
+      {
+        "title": "TVN24 – Weta prezydentów (analiza do 2017)",
+        "url": "https://tvn24.pl/polska/weta-prezydentow-kto-ile-zglosil-ra759688-ls2457703"
+      },
+      {
+        "title": "Kancelaria Prezydenta RP – Zestawienie aktywności legislacyjnej 1995–2009",
+        "url": "https://www.prezydent.pl/kancelaria/archiwum/archiwum-lecha-kaczynskiego/aktualnosci/rok-2009/zestawienie-aktywnosci-legislacyjnej-prezydentow-rp-w-latach-1995-2009"
+      },
+      {
+        "title": "pravda.org.pl – Prezydenci wetują mniej niż 1% ustaw?",
+        "url": "https://pravda.org.pl/weto-prezydenci"
+      },
+      {
+        "title": "gazetaprawna – Kancelaria prezydenta podsumowuje 10 lat prezydentury Andrzeja Dudy",
+        "url": "https://www.gazetaprawna.pl/wiadomosci/kraj/artykuly/9849526,kancelaria-prezydenta-podsumowuje-10-lat-prezydentury-andrzeja-dudy-1.html"
+      },
+      {
+        "title": "TVN24 – Wszystkie weta prezydenta (stan na 4.12.2025)",
+        "url": "https://tvn24.pl/polska/weta-karola-nawrockiego-rekord-wszystkie-ustawy-zawetowane-przez-prezydenta-st8784705"
+      },
+      {
+        "title": "Money.pl – Kolejne weta prezydenta. Nie będzie wyższej akcyzy na alkohol (19.12.2025)",
+        "url": "https://www.money.pl/podatki/kolejne-weta-prezydenta-nie-bedzie-wyzszej-akcyzy-na-alkohol-7234038465166304a.html"
+      },
+      {
+        "title": "Onet – Karol Nawrocki zawetował kolejne ustawy. Zwrócił się do rządu (18.12.2025)",
+        "url": "https://wiadomosci.onet.pl/kraj/karol-nawrocki-zawetowal-kolejne-ustawy-zwrocil-sie-do-rzadu/f7q54pl"
+      }
+    ]
+  },
+  "ulaskawienia": {
+    "data": [
+      {
+        "id": 1,
+        "name": "Andrzej Duda",
+        "image": "/images/duda.jpg",
+        "value": 52,
+        "party": "PiS",
+        "term": "2020–2025"
+      },
+      {
+        "id": 2,
+        "name": "Andrzej Duda",
+        "image": "/images/duda.jpg",
+        "value": 94,
+        "party": "PiS",
+        "term": "2015–2020"
+      },
+      {
+        "id": 3,
+        "name": "Bronisław Komorowski",
+        "image": "/images/komorowski.jpg",
+        "value": 360,
+        "party": "PO",
+        "term": "2010–2015"
+      },
+      {
+        "id": 4,
+        "name": "Lech Kaczyński",
+        "image": "/images/kaczynski.jpg",
+        "value": 201,
+        "party": "PiS",
+        "term": "2005–2010"
+      },
+      {
+        "id": 5,
+        "name": "Aleksander Kwaśniewski",
+        "image": "/images/kwasniewski.jpg",
+        "value": 1050,
+        "party": "SLD",
+        "term": "2000–2005"
+      },
+      {
+        "id": 6,
+        "name": "Aleksander Kwaśniewski",
+        "image": "/images/kwasniewski.jpg",
+        "value": 3252,
+        "party": "SLD",
+        "term": "1995–2000"
+      },
+      {
+        "id": 7,
+        "name": "Lech Wałęsa",
+        "image": "/images/image.png",
+        "value": 3454,
+        "party": "Independent",
+        "term": "1990–1995"
+      },
+      {
+        "id": 8,
+        "name": "Wojciech Jaruzelski",
+        "image": "/images/jaruzelski.jpg",
+        "value": 607,
+        "party": "PZPR",
+        "term": "1989–1990"
+      },
+      {
+        "id": 9,
+        "name": "Karol Nawrocki",
+        "image": "/images/nawrocki.jpg",
+        "value": 0,
+        "party": "PiS",
+        "term": "2025-08-06"
+      }
+    ],
+    "sources": [
+      {
+        "title": "WP.pl – Prezydenckie ułaskawienia (2020)",
+        "url": "https://wiadomosci.wp.pl/wybory-prezydenckie-2020-andrzej-duda-ulaskawil-zabojce-dilera-i-kierujacego-po-pijaku-6529533356439169a"
+      },
+      {
+        "title": "Solidarność Rzeszów – Kto ułaskawił najwięcej osób? (2025)",
+        "url": "http://solidarnosc.rzeszow.org.pl/prezydenckie-ulaskawienia-kto-byl-rekordzista/"
+      },
+      { "title": "wikipedia - ułaskawienia", "url": "https://pl.wikipedia.org/wiki/U%C5%82askawienie" },
+      { "title": "Wprost - Fabryka ułaskawień", "url": "https://www.wprost.pl/tygodnik/9372/fabryka-ulaskawien.html" },
+      {
+        "title": "Onet – Karol Nawrocki nie skorzystał z prawa łaski (7.11.2025)",
+        "url": "https://wiadomosci.onet.pl/kraj/ulaskawienie-na-horyzoncie-polacy-w-sondazu-ocenili-przywilej-nawrockiego/dnm6l6g"
+      }
+    ]
+  },
+  "podpisaneUstawy": {
+    "data": [
+      {
+        "id": 1,
+        "name": "Andrzej Duda",
+        "image": "/images/duda.jpg",
+        "value": 784,
+        "party": "PiS",
+        "term": "2020–2025"
+      },
+      {
+        "id": 2,
+        "name": "Andrzej Duda",
+        "image": "/images/duda.jpg",
+        "value": 1066,
+        "party": "PiS",
+        "term": "2015–2020"
+      },
+      {
+        "id": 3,
+        "name": "Bronisław Komorowski",
+        "image": "/images/komorowski.jpg",
+        "value": 930,
+        "party": "PO",
+        "term": "2010–2015"
+      },
+      {
+        "id": 4,
+        "name": "Lech Kaczyński",
+        "image": "/images/kaczynski.jpg",
+        "value": 804,
+        "party": "PiS",
+        "term": "2005–2010"
+      },
+      {
+        "id": 5,
+        "name": "Aleksander Kwaśniewski",
+        "image": "/images/kwasniewski.jpg",
+        "value": 1123,
+        "party": "SLD",
+        "term": "2000–2005"
+      },
+      {
+        "id": 6,
+        "name": "Aleksander Kwaśniewski",
+        "image": "/images/kwasniewski.jpg",
+        "value": 671,
+        "party": "SLD",
+        "term": "1995–2000"
+      },
+      {
+        "id": 7,
+        "name": "Lech Wałęsa",
+        "image": "/images/image.png",
+        "value": 410,
+        "party": "Independent",
+        "term": "1990–1995"
+      },
+      {
+        "id": 8,
+        "name": "Wojciech Jaruzelski",
+        "image": "/images/jaruzelski.jpg",
+        "value": 120,
+        "party": "PZPR",
+        "term": "1989–1990"
+      },
+      {
+        "id": 9,
+        "name": "Karol Nawrocki",
+        "image": "/images/nawrocki.jpg",
+        "value": 115,
+        "party": "PiS",
+        "term": "2025-08-06"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Gazeta Prawna – Podsumowanie 10 lat prezydentury A. Dudy",
+        "url": "https://www.gazetaprawna.pl/wiadomosci/kraj/artykuly/9849526,kancelaria-prezydenta-podsumowuje-10-lat-prezydentury-andrzeja-dudy-1.html"
+      },
+      {
+        "title": "Prezydent.pl – 5 lat prezydentury Andrzeja Dudy (archiwum)",
+        "url": "https://www.prezydent.pl/kancelaria/archiwum/andrzej-duda/prezydent/piec-lat-prezydentury-andrzeja-dudy/legislacja"
+      },
+      {
+        "title": "Kancelaria Prezydenta RP – Zestawienie aktywności legislacyjnej 1995–2009",
+        "url": "https://www.prezydent.pl/kancelaria/archiwum/archiwum-lecha-kaczynskiego/aktualnosci/rok-2009/zestawienie-aktywnosci-legislacyjnej-prezydentow-rp-w-latach-1995-2009"
+      },
+      {
+        "title": "https://wydarzenia.interia.pl/ – Podsumowanie pięciu lat rządów prezydenta Bronisława Komorowskiego",
+        "url": "https://wydarzenia.interia.pl/kraj/news-podsumowanie-pieciu-lat-rzadow-prezydenta-bronislawa-komorow,nId,1864061"
+      },
+      {
+        "title": "https://tvn24.pl/ – Głowa państwa mówi nie pozwalam.",
+        "url": "https://tvn24.pl/polska/weta-prezydentow-kto-ile-zglosil-ra759688-ls2457703"
+      },
+      {
+        "title": "https://przegladdziennikarski.pl/ – Wojciech Jaruzelski. Początki polskiej prezydentury",
+        "url": "https://przegladdziennikarski.pl/wojciech-jaruzelski-poczatki-polskiej-prezydentury/"
+      },
+      {
+        "title": "TVN24 – Wszystkie weta prezydenta (stan na 4.12.2025)",
+        "url": "https://tvn24.pl/polska/weta-karola-nawrockiego-rekord-wszystkie-ustawy-zawetowane-przez-prezydenta-st8784705"
+      },
+      {
+        "title": "Money.pl – Kolejne weta prezydenta. Nie będzie wyższej akcyzy na alkohol (19.12.2025)",
+        "url": "https://www.money.pl/podatki/kolejne-weta-prezydenta-nie-bedzie-wyzszej-akcyzy-na-alkohol-7234038465166304a.html"
+      },
+      {
+        "title": "Onet – Karol Nawrocki zawetował kolejne ustawy. Zwrócił się do rządu (18.12.2025)",
+        "url": "https://wiadomosci.onet.pl/kraj/karol-nawrocki-zawetowal-kolejne-ustawy-zwrocil-sie-do-rzadu/f7q54pl"
+      }
+    ]
+  },
+  "wnioskiDoTK": {
+    "data": [
+      {
+        "id": 1,
+        "name": "Andrzej Duda",
+        "image": "/images/duda.jpg",
+        "value": 51,
+        "party": "PiS",
+        "term": "2020–2025"
+      },
+      {
+        "id": 2,
+        "name": "Andrzej Duda",
+        "image": "/images/duda.jpg",
+        "value": 10,
+        "party": "PiS",
+        "term": "2015–2020"
+      },
+      {
+        "id": 3,
+        "name": "Bronisław Komorowski",
+        "image": "/images/komorowski.jpg",
+        "value": 12,
+        "party": "PO",
+        "term": "2010–2015"
+      },
+      {
+        "id": 4,
+        "name": "Lech Kaczyński",
+        "image": "/images/kaczynski.jpg",
+        "value": 16,
+        "party": "PiS",
+        "term": "2005–2010"
+      },
+      {
+        "id": 5,
+        "name": "Aleksander Kwaśniewski",
+        "image": "/images/kwasniewski.jpg",
+        "value": 12,
+        "party": "SLD",
+        "term": "2000–2005"
+      },
+      {
+        "id": 6,
+        "name": "Aleksander Kwaśniewski",
+        "image": "/images/kwasniewski.jpg",
+        "value": 13,
+        "party": "SLD",
+        "term": "1995–2000"
+      },
+      {
+        "id": 7,
+        "name": "Lech Wałęsa",
+        "image": "/images/image.png",
+        "value": 11,
+        "party": "Independent",
+        "term": "1990–1995"
+      },
+      {
+        "id": 8,
+        "name": "Wojciech Jaruzelski",
+        "image": "/images/jaruzelski.jpg",
+        "value": 0,
+        "party": "PZPR",
+        "term": "1989–1990"
+      },
+      {
+        "id": 9,
+        "name": "Karol Nawrocki",
+        "image": "/images/nawrocki.jpg",
+        "value": 2,
+        "party": "PiS",
+        "term": "2025-08-06"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Kancelaria Prezydenta RP – Zestawienie aktywności legislacyjnej 1995–2009",
+        "url": "https://www.prezydent.pl/kancelaria/archiwum/archiwum-lecha-kaczynskiego/aktualnosci/rok-2009/zestawienie-aktywnosci-legislacyjnej-prezydentow-rp-w-latach-1995-2009"
+      },
+      {
+        "title": "pravda.org.pl – Prezydenci wetują mniej niż 1% ustaw?",
+        "url": "https://pravda.org.pl/weto-prezydenci"
+      },
+      {
+        "title": "gazetaprawna – Kancelaria prezydenta podsumowuje 10 lat prezydentury Andrzeja Dudy",
+        "url": "https://www.gazetaprawna.pl/wiadomosci/kraj/artykuly/9849526,kancelaria-prezydenta-podsumowuje-10-lat-prezydentury-andrzeja-dudy-1.html"
+      },
+      {
+        "title": "Prawo.pl – Podsumowanie kadencji B. Komorowskiego (2015)",
+        "url": "https://www.prawo.pl/samorzad/prezydentura-bronislawa-komorowskiego-26-projektow-ustaw-4-weta,207078.html"
+      },
+      {
+        "title": "wydarzenia.interia.pl - Podsumowanie pięciu lat rządów prezydenta Bronisława Komorowskiego",
+        "url": "https://wydarzenia.interia.pl/kraj/news-podsumowanie-pieciu-lat-rzadow-prezydenta-bronislawa-komorow,nId,1864061"
+      },
+      {
+        "title": "ilw.org.pl - 20. rocznica inauguracji prezydentury Lecha Wałęsy",
+        "url": "https://www.ilw.org.pl/files/pliki/ILW-album_internet.pdf"
+      },
+      {
+        "title": "PR24 – Wniosek Prezydenta do TK ws. delegalizacji KPP (03.12.2025)",
+        "url": "https://polskieradio24.pl/artykul/3616008,nawrocki-chcial-delegalizacji-tej-partii-jest-decyzja-trybunalu-konstytucyjnego"
+      },
+      {
+        "title": "Prezydent.pl – Wniosek Prezydenta do TK ws. rozporządzenia Min. Sprawiedliwości (28.10.2025)",
+        "url": "https://www.prezydent.pl/prawo/wnioski-do-tk/wniosek-do-tk-ws-rozporzadzenia-ministra-sprawiedliwosci,109371"
+      }
+    ]
+  },
+  "inicjatywyUstawodawcze": {
+    "data": [
+      {
+        "id": 1,
+        "name": "Andrzej Duda",
+        "image": "/images/duda.jpg",
+        "value": 31,
+        "party": "PiS",
+        "term": "2020–2025"
+      },
+      {
+        "id": 2,
+        "name": "Andrzej Duda",
+        "image": "/images/duda.jpg",
+        "value": 31,
+        "party": "PiS",
+        "term": "2015–2020"
+      },
+      {
+        "id": 3,
+        "name": "Bronisław Komorowski",
+        "image": "/images/komorowski.jpg",
+        "value": 26,
+        "party": "PO",
+        "term": "2010–2015"
+      },
+      {
+        "id": 4,
+        "name": "Lech Kaczyński",
+        "image": "/images/kaczynski.jpg",
+        "value": 44,
+        "party": "PiS",
+        "term": "2005–2010"
+      },
+      {
+        "id": 5,
+        "name": "Aleksander Kwaśniewski",
+        "image": "/images/kwasniewski.jpg",
+        "value": 24,
+        "party": "SLD",
+        "term": "2000–2005"
+      },
+      {
+        "id": 6,
+        "name": "Aleksander Kwaśniewski",
+        "image": "/images/kwasniewski.jpg",
+        "value": 20,
+        "party": "SLD",
+        "term": "1995–2000"
+      },
+      {
+        "id": 7,
+        "name": "Lech Wałęsa",
+        "image": "/images/image.png",
+        "value": 33,
+        "party": "Independent",
+        "term": "1990–1995"
+      },
+      {
+        "id": 8,
+        "name": "Wojciech Jaruzelski",
+        "image": "/images/jaruzelski.jpg",
+        "value": 0,
+        "party": "PZPR",
+        "term": "1989–1990"
+      },
+      {
+        "id": 9,
+        "name": "Karol Nawrocki",
+        "image": "/images/nawrocki.jpg",
+        "value": 13,
+        "party": "PiS",
+        "term": "2025-08-06"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Kancelaria Prezydenta RP – Zestawienie aktywności legislacyjnej 1995–2009",
+        "url": "https://www.prezydent.pl/kancelaria/archiwum/archiwum-lecha-kaczynskiego/aktualnosci/rok-2009/zestawienie-aktywnosci-legislacyjnej-prezydentow-rp-w-latach-1995-2009"
+      },
+      {
+        "title": "pravda.org.pl – Prezydenci wetują mniej niż 1% ustaw?",
+        "url": "https://pravda.org.pl/weto-prezydenci"
+      },
+      {
+        "title": "gazetaprawna – Kancelaria prezydenta podsumowuje 10 lat prezydentury Andrzeja Dudy",
+        "url": "https://www.gazetaprawna.pl/wiadomosci/kraj/artykuly/9849526,kancelaria-prezydenta-podsumowuje-10-lat-prezydentury-andrzeja-dudy-1.html"
+      },
+      {
+        "title": "Prawo.pl – Podsumowanie kadencji B. Komorowskiego (2015)",
+        "url": "https://www.prawo.pl/samorzad/prezydentura-bronislawa-komorowskiego-26-projektow-ustaw-4-weta,207078.html"
+      },
+      {
+        "title": "wydarzenia.interia.pl - Podsumowanie pięciu lat rządów prezydenta Bronisława Komorowskiego",
+        "url": "https://wydarzenia.interia.pl/kraj/news-podsumowanie-pieciu-lat-rzadow-prezydenta-bronislawa-komorow,nId,1864061"
+      },
+      {
+        "title": "ilw.org.pl - 20. rocznica inauguracji prezydentury Lecha Wałęsy",
+        "url": "https://www.ilw.org.pl/files/pliki/ILW-album_internet.pdf"
+      },
+      {
+        "title": "Demagog.org.pl – Analiza inicjatyw ustawodawczych prezydentów (2020)",
+        "url": "https://demagog.org.pl/wypowiedzi/ktory-z-polskich-prezydentow-zglosil-najwiecej-projektow-ustaw/"
+      },
+      {
+        "title": "Wikipedia – Bronisław Komorowski (inicjatywy ustawodawcze)",
+        "url": "https://pl.wikipedia.org/wiki/Bronis%C5%82aw_Komorowski#Prezydentura"
+      },
+      {
+        "title": "Polsat News – Karol Nawrocki złożył 13 projektów ustaw (03.12.2025)",
+        "url": "https://www.polsatnews.pl/wiadomosc/2025-12-03/sejm-zadecyduje-o-prezydenckim-wecie-jest-decyzja-koalicji-w-tej-sprawie/"
+      }
+    ]
+  }
+}
