@@ -6,7 +6,9 @@
       "WebFetch(domain:www.prezydent.pl)",
       "WebFetch(domain:konkret24.tvn24.pl)",
       "WebFetch(domain:gramgrubo.pl)",
-      "Bash(find C:\\\\Users\\\\kndwa\\\\Documents\\\\polskieweto:*)"
+      "Bash(find C:\\\\Users\\\\kndwa\\\\Documents\\\\polskieweto:*)",
+      "Bash(pnpm build:*)",
+      "Bash(pnpm install:*)"
     ]
   }
 }

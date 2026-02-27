@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import type { Language } from "@/lib/translations"
 
 interface StatCardProps {
   name: string
@@ -9,6 +10,7 @@ interface StatCardProps {
   maxValue: number
   party: string
   term: string
+  language: Language
 }
 
 const partyColors: Record<string, string> = {
@@ -22,7 +24,7 @@ function calculateYears(term: string): number {
   // Check if it's an ongoing presidency (format: "2024-08-06" or similar date)
   if (term.match(/^\d{4}-\d{2}-\d{2}$/)) {
     const startDate = new Date(term)
-    const today = new Date("2025-12-19") // Current date
+    const today = new Date()
     const diffTime = Math.abs(today.getTime() - startDate.getTime())
     const diffYears = diffTime / (1000 * 60 * 60 * 24 * 365.25)
     return diffYears
@@ -36,28 +38,35 @@ function calculateYears(term: string): number {
   return 1 // Default to 1 year if parsing fails
 }
 
-function formatTermDisplay(term: string): string {
+function formatTermDisplay(term: string, language: Language): string {
   if (term.match(/^\d{4}-\d{2}-\d{2}$/)) {
     const date = new Date(term)
     const year = date.getFullYear()
-    return `${year}–obecnie`
+    return `${year}–${language === "pl" ? "obecnie" : "present"}`
   }
   return term
 }
 
-export function StatCard({ name, image, value, maxValue, party, term }: StatCardProps) {
-  const percentage = (value / maxValue) * 100
+export function StatCard({ name, image, value, maxValue, party, term, language }: StatCardProps) {
+  const percentage = maxValue > 0 ? (value / maxValue) * 100 : 0
   const barColor = partyColors[party] || "bg-primary"
 
   const years = calculateYears(term)
   const perYear = years > 0 ? (value / years).toFixed(1) : "0.0"
-  const displayTerm = formatTermDisplay(term)
+  const displayTerm = formatTermDisplay(term, language)
+  const locale = language === "pl" ? "pl-PL" : "en-US"
 
   return (
     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 py-3">
       <div className="flex items-center gap-3 md:flex-col md:items-center md:gap-1 md:w-[140px] shrink-0">
         <div className="relative w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-muted shrink-0">
-          <Image src={image || "/placeholder.svg"} alt={name} fill className="object-cover" />
+          <Image
+            src={image || "/placeholder.svg"}
+            alt={name}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 48px, 64px"
+          />
         </div>
         <div className="flex flex-col md:items-center md:text-center">
           <span className="text-sm font-medium text-foreground leading-tight text-balance">{name}</span>
@@ -72,13 +81,20 @@ export function StatCard({ name, image, value, maxValue, party, term }: StatCard
           <div
             className={`h-full ${barColor} rounded-sm transition-all duration-500 ease-out`}
             style={{ width: `${percentage}%` }}
+            role="meter"
+            aria-valuenow={value}
+            aria-valuemin={0}
+            aria-valuemax={maxValue}
+            aria-label={`${name}: ${value}`}
           />
         </div>
         <div className="flex flex-col items-end min-w-[60px] md:min-w-[80px]">
           <span className="text-xl md:text-2xl font-bold text-foreground text-right tabular-nums">
-            {value.toLocaleString("pl-PL")}
+            {value.toLocaleString(locale)}
           </span>
-          <span className="text-xs text-muted-foreground tabular-nums">{perYear}/rok</span>
+          <span className="text-xs text-muted-foreground tabular-nums">
+            {perYear}/{language === "pl" ? "rok" : "year"}
+          </span>
         </div>
       </div>
     </div>

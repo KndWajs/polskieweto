@@ -2,12 +2,14 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { JsonLd } from "@/components/json-ld"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://polskieweto.pl"),
   title: "Statystyki Prezydentów III RP - Zawetowane ustawy, ułaskawienia, wnioski do TK",
   description:
     "Porównanie statystyk prezydentów Polski III RP. Zawetowane ustawy, ułaskawienia, podpisane ustawy, wnioski do Trybunału Konstytucyjnego, inicjatywy ustawodawcze. Wałęsa, Kwaśniewski, Kaczyński, Komorowski, Duda.",
@@ -32,11 +34,20 @@ export const metadata: Metadata = {
   authors: [{ name: "SimplyGo", url: "https://simplygo.pl" }],
   creator: "SimplyGo",
   publisher: "SimplyGo",
+  alternates: {
+    canonical: "/",
+    languages: {
+      pl: "/",
+      en: "/",
+      "x-default": "/",
+    },
+  },
   openGraph: {
     title: "Statystyki Prezydentów III RP",
     description:
       "Porównanie zawetowanych ustaw, ułaskawień, wniosków do TK i inicjatyw ustawodawczych prezydentów Polski.",
     type: "website",
+    url: "/",
     locale: "pl_PL",
     siteName: "Statystyki Prezydentów III RP",
   },
@@ -50,11 +61,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  generator: "v0.app",
   icons: {
-    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='16' fill='white'/><rect y='16' width='32' height='16' fill='%23dc143c'/></svg>",
-    apple:
-      "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='16' fill='white'/><rect y='16' width='32' height='16' fill='%23dc143c'/></svg>",
+    icon: "/icon.svg",
+    apple: "/apple-icon.png",
   },
 }
 
@@ -66,6 +75,7 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body className={`font-sans antialiased`}>
+        <JsonLd />
         {children}
         <Analytics />
       </body>

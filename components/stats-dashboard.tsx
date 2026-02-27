@@ -46,7 +46,7 @@ export function StatsDashboard() {
         </div>
       </header>
 
-      <main className="max-w-5xl mx-auto px-4 py-8">
+      <main className="max-w-5xl mx-auto px-4 py-8" aria-label={language === "pl" ? "Statystyki prezydentów" : "Presidential statistics"}>
         <div className="mb-8 text-sm text-muted-foreground leading-relaxed">
           <p>{t.description}</p>
         </div>
@@ -85,6 +85,7 @@ export function StatsDashboard() {
                   maxValue={maxValue}
                   party={item.party}
                   term={item.term}
+                  language={language}
                 />
               </div>
             </div>
@@ -99,6 +100,7 @@ export function StatsDashboard() {
               height="280"
               className="border-0"
               title="Newsletter signup form"
+              loading="lazy"
             />
           </div>
         </div>
