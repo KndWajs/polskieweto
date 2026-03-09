@@ -26,6 +26,7 @@ export const translations = {
       wnioskiDoTK: "Wnioski do TK",
       inicjatywyUstawodawcze: "Inicjatywy ustawodawcze",
     },
+    lastUpdated: "Ostatnia aktualizacja danych",
     footer: {
       simplygo: "SimplyGo - Odkrywaj Aktywności",
       wajs: "wajs.tech",
@@ -58,6 +59,7 @@ export const translations = {
       wnioskiDoTK: "Constitutional Tribunal Motions",
       inicjatywyUstawodawcze: "Legislative Initiatives",
     },
+    lastUpdated: "Data last updated",
     footer: {
       simplygo: "SimplyGo - Discover Activities",
       wajs: "wajs.tech",

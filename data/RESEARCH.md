@@ -3,7 +3,7 @@
 This file is a quick-reference for AI research sessions. It summarizes all current values and sources so an AI can compare against new findings and update `presidential-stats.json`.
 
 **Data file to update:** `data/presidential-stats.json`
-**Last full review:** 2026-02-27
+**Last full review:** 2026-03-09
 
 ---
 
@@ -37,7 +37,7 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 | Komorowski (10-15) | 4 | 930 | 360 | 12 | 26 |
 | Duda (15-20) | 9 | 1066 | 94 | 10 | 31 |
 | Duda (20-25) | 10 | 784 | 52 | 51 | 31 |
-| **Nawrocki (25–)** | **27** | **157** | **3** | **4** | **16** |
+| **Nawrocki (25–)** | **27** | **167** | **3** | **5** | **16** |
 
 ---
 
@@ -77,7 +77,7 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 **New sources found (Feb 2026):**
 - https://www.prezydent.pl/prawo/ustawy-podpisane — Official monthly breakdown of signed laws (best primary source — count per month)
 
-**Search tips:** Count monthly from prezydent.pl/prawo/ustawy-podpisane. Aug=31, Sep=3, Oct=24, Nov=30, Dec=44, Jan 2026=15, Feb 2026=10 → total 157. Often published alongside veto counts.
+**Search tips:** Count monthly from prezydent.pl/prawo/ustawy-podpisane. Aug=31, Sep=3, Oct=24, Nov=30, Dec=44, Jan 2026=15, Feb 2026=10, Mar 2026=10 (as of Mar 9) → total 167. Often published alongside veto counts.
 
 ---
 
@@ -112,12 +112,13 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 - https://polskieradio24.pl/artykul/3616008,nawrocki-chcial-delegalizacji-tej-partii-jest-decyzja-trybunalu-konstytucyjnego — Nawrocki KPP motion
 - https://www.prezydent.pl/prawo/wnioski-do-tk/wniosek-do-tk-ws-rozporzadzenia-ministra-sprawiedliwosci,109371 — official TK motion page
 
-**New sources found (Feb 2026):**
-- https://www.prezydent.pl/prawo/wnioski-do-tk — Official list (4 motions total as of Feb 2026)
+**New sources found (Feb–Mar 2026):**
+- https://www.prezydent.pl/prawo/wnioski-do-tk — Official list (5 motions total as of Mar 2026)
 - Budget 2026 sent to TK (Jan 19, 2026): https://www.prawo.pl/podatki/prezydent-podpisal-budzet-na-2026-rok,536834.html
 - Road safety law sent to TK (Dec 22, 2025): https://www.prezydent.pl/prawo/wnioski-do-tk/wniosek-do-trybunalu-konstytucyjnego,110189
+- Cybersecurity/KSC law sent to TK (Feb 19, 2026): https://www.prawo.pl/biznes/prezydent-podpisal-ustawe-o-krajowym-systemie-cyberbezpieczenstwa-i-skierowal-wniosek-do-tk,1537069.html
 
-**Search tips:** Check prezydent.pl/prawo/wnioski-do-tk/ for an official list of current president's TK motions. 4 total: Min. Sprawiedliwości regulation (Oct), KPP delegalization (Nov), road safety (Dec), budget 2026 (Jan).
+**Search tips:** Check prezydent.pl/prawo/wnioski-do-tk/ for an official list of current president's TK motions. 5 total: Min. Sprawiedliwości regulation (Oct), KPP delegalization (Nov), road safety (Dec), budget 2026 (Jan), cybersecurity/KSC law (Feb 19, 2026).
 
 ---
 

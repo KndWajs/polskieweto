@@ -69,6 +69,7 @@ export function StatsDashboard() {
 
         <footer className="border-t border-border mt-12 py-6">
           <div className="max-w-5xl mx-auto px-4 text-center text-sm text-muted-foreground space-y-2">
+            <p>{t.lastUpdated}: 09.03.2026</p>
             <div className="flex items-center justify-center gap-4 flex-wrap">
               <a href="mailto:simplygopolska@gmail.com" className="hover:text-foreground transition-colors">
                 simplygopolska@gmail.com
