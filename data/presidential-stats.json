@@ -69,7 +69,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 27,
+        "value": 29,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -110,6 +110,14 @@
       {
         "title": "Konkret24 – Karol Nawrocki zawetował rekordową liczbę ustaw? Policzyliśmy",
         "url": "https://konkret24.tvn24.pl/polityka/karol-nawrocki-zawetowal-rekordowa-liczbe-ustaw-policzylismy-st8881758"
+      },
+      {
+        "title": "Rzeczpospolita – 20 wet w pięć miesięcy. Jak Karol Nawrocki wypada na tle poprzedników",
+        "url": "https://www.rp.pl/prawo-w-polsce/art43578771-20-wet-w-piec-miesiecy-jak-karol-nawrocki-wypada-na-tle-poprzednikow"
+      },
+      {
+        "title": "Interia – Kolejne weta prezydenta. Karol Nawrocki zablokował ustawę cyfrową (kwiecień 2026)",
+        "url": "https://wydarzenia.interia.pl/kraj/news-karol-nawrocki-podjal-decyzje-nowe-weta-prezydenta,nId,22506868"
       }
     ]
   },
@@ -183,7 +191,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 3,
+        "value": 4,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -210,6 +218,14 @@
       {
         "title": "TVN24 – Prezydent Nawrocki ułaskawił trzy osoby (02.02.2026)",
         "url": "https://tvn24.pl/polska/prezydent-karol-nawrocki-ulaskawil-trzy-osoby-znamy-uzasadnienia-st8881270"
+      },
+      {
+        "title": "TVN24 – Prezydent Karol Nawrocki ułaskawił jedną osobę (13.04.2026)",
+        "url": "https://tvn24.pl/polska/prezydent-karol-nawrocki-ulaskawil-jedna-osobe-st8996371"
+      },
+      {
+        "title": "PolsatNews – Akt łaski wobec Weroniki Krawczyk. Prezydent Nawrocki zdecydował (13.04.2026)",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-04-13/akt-laski-wobec-weroniki-krawczyk-prezydent-nawrocki-zdecydowal/"
       }
     ]
   },
@@ -283,7 +299,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 167,
+        "value": 184,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -328,6 +344,14 @@
       {
         "title": "Prezydent.pl – Ustawy podpisane w marcu 2026 r.",
         "url": "https://www.prezydent.pl/prawo/ustawy-podpisane/ustawy-podpisane-w-marcu-2026-r,116531"
+      },
+      {
+        "title": "Prezydent.pl – Ustawy podpisane w kwietniu 2026 r.",
+        "url": "https://www.prezydent.pl/prawo/ustawy-podpisane/ustawy-podpisane-w-kwietniu-2026-r,118094"
+      },
+      {
+        "title": "RMF24 – Karol Nawrocki podpisał pięć ustaw (kwiecień 2026)",
+        "url": "https://www.rmf24.pl/polityka/news-prezydent-podpisal-ustawy-zmiany-dla-polakow-walczacych-na-u,nId,8074275"
       }
     ]
   },
@@ -401,7 +425,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 5,
+        "value": 7,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -450,6 +474,14 @@
       {
         "title": "Prawo.pl – Prezydent podpisał ustawę o KSC i skierował wniosek do TK (19.02.2026)",
         "url": "https://www.prawo.pl/biznes/prezydent-podpisal-ustawe-o-krajowym-systemie-cyberbezpieczenstwa-i-skierowal-wniosek-do-tk,1537069.html"
+      },
+      {
+        "title": "PolsatNews – Reforma Państwowej Inspekcji Pracy. Prezydent podpisał ustawę i skierował do TK (02.04.2026)",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-04-02/reforma-panstwowej-inspekcji-pracy-prezydent-zdecydowal-o-losie-ustawy/"
+      },
+      {
+        "title": "wPolityce – Prezydent podpisał kolejne ustawy. Dwie z nich skierował do TK",
+        "url": "https://wpolityce.pl/polityka/757063-prezydent-podpisal-kolejne-ustawy-dwie-z-nich-skierowal-do-tk"
       }
     ]
   },
