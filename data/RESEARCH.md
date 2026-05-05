@@ -3,7 +3,7 @@
 This file is a quick-reference for AI research sessions. It summarizes all current values and sources so an AI can compare against new findings and update `presidential-stats.json`.
 
 **Data file to update:** `data/presidential-stats.json`
-**Last full review:** 2026-03-09
+**Last full review:** 2026-05-05
 
 ---
 
@@ -37,7 +37,7 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 | Komorowski (10-15) | 4 | 930 | 360 | 12 | 26 |
 | Duda (15-20) | 9 | 1066 | 94 | 10 | 31 |
 | Duda (20-25) | 10 | 784 | 52 | 51 | 31 |
-| **Nawrocki (25–)** | **27** | **167** | **3** | **5** | **16** |
+| **Nawrocki (25–)** | **31** | **192** | **4** | **8** | **17** |
 
 ---
 

@@ -69,7 +69,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 29,
+        "value": 31,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -118,6 +118,18 @@
       {
         "title": "Interia – Kolejne weta prezydenta. Karol Nawrocki zablokował ustawę cyfrową (kwiecień 2026)",
         "url": "https://wydarzenia.interia.pl/kraj/news-karol-nawrocki-podjal-decyzje-nowe-weta-prezydenta,nId,22506868"
+      },
+      {
+        "title": "Rzeczpospolita – Prezydent zawetował dwie ważne ustawy: Kodeks wyborczy i Kodeks rodzinny (30.04.2026)",
+        "url": "https://www.rp.pl/prawo-w-polsce/art44288471-prezydent-zawetowal-dwie-wazne-ustawy-zagrozone-byly-wartosci-fundamentalne-uczciwosc-wyborow-i-dobro-rodziny"
+      },
+      {
+        "title": "Do Rzeczy – Tyle ustaw zawetował Nawrocki. Kancelaria Prezydenta tłumaczy dlaczego (01.05.2026)",
+        "url": "https://dorzeczy.pl/kraj/881434/tyle-ustaw-zawetowal-nawrocki-kprp-tlumaczy-dlaczego.html"
+      },
+      {
+        "title": "Wiesci24 – Prezydent czy „wetomat”? 31 zawetowanych ustaw (01.05.2026)",
+        "url": "https://wiesci24.pl/2026/05/01/prezydent-czy-wetomat-polityka-weta-jako-teatr-ambicji/"
       }
     ]
   },
@@ -299,7 +311,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 184,
+        "value": 192,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -352,6 +364,18 @@
       {
         "title": "RMF24 – Karol Nawrocki podpisał pięć ustaw (kwiecień 2026)",
         "url": "https://www.rmf24.pl/polityka/news-prezydent-podpisal-ustawy-zmiany-dla-polakow-walczacych-na-u,nId,8074275"
+      },
+      {
+        "title": "Goniec – Rzecznik prezydenta: Karol Nawrocki podpisał dwie ustawy (16.04.2026)",
+        "url": "https://goniec.pl/rzecznik-prezydenta-karol-nawrocki-podpisal-dwie-ustawy-mt-wwi-160426"
+      },
+      {
+        "title": "Goniec – Nawrocki podpisał kolejne ustawy. Wśród nich opozycja antykomunistyczna (22.04.2026)",
+        "url": "https://goniec.pl/nawrocki-podpisal-ustawe-tysiace-polakow-czekaja-dodatkowe-swiadczenia-wk-wksw-220426"
+      },
+      {
+        "title": "Prezydent.pl – Prezydent RP podpisał dwie ustawy, dwie zawetował (30.04.2026)",
+        "url": "https://www.prezydent.pl/aktualnosci/wydarzenia/prezydent-rp-podpisal-dwie-ustawy-dwie-zawetowal,115305"
       }
     ]
   },
@@ -425,7 +449,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 7,
+        "value": 8,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -482,6 +506,14 @@
       {
         "title": "wPolityce – Prezydent podpisał kolejne ustawy. Dwie z nich skierował do TK",
         "url": "https://wpolityce.pl/polityka/757063-prezydent-podpisal-kolejne-ustawy-dwie-z-nich-skierowal-do-tk"
+      },
+      {
+        "title": "Rzeczpospolita – Prezydent skierował wniosek do TK ws. ślubowania nowych sędziów (27.04.2026)",
+        "url": "https://www.rp.pl/sady-i-trybunaly/art44255101-slubowanie-nowych-sedziow-tk-prezydent-skierowal-wniosek-do-trybunalu"
+      },
+      {
+        "title": "Rzeczpospolita – Spór o ślubowanie sędziów TK. Treść wniosku do Trybunału (29.04.2026)",
+        "url": "https://www.rp.pl/sady-i-trybunaly/art44268311-spor-miedzy-prezydentem-a-sejmem-o-slubowanie-sedziow-tk-znamy-tresc-wniosku-do-trybunalu-konstytucyjnego"
       }
     ]
   },
@@ -555,7 +587,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 16,
+        "value": 17,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -600,6 +632,10 @@
       {
         "title": "Prezydent.pl – Inicjatywy ustawodawcze (stan na 27.02.2026)",
         "url": "https://www.prezydent.pl/prawo/inicjatywy-ustawodawcze"
+      },
+      {
+        "title": "PolsatNews – Prezydencki projekt ustawy o ochronie funkcji produkcyjnej wsi (07.04.2026)",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-04-07/nowa-inicjatywa-prezydenta-ochrona-wsi-i-list-z-zadaniem-do-tuska/"
       }
     ]
   }
