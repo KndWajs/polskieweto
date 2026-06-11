@@ -69,7 +69,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 31,
+        "value": 37,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -130,6 +130,26 @@
       {
         "title": "Wiesci24 – Prezydent czy „wetomat”? 31 zawetowanych ustaw (01.05.2026)",
         "url": "https://wiesci24.pl/2026/05/01/prezydent-czy-wetomat-polityka-weta-jako-teatr-ambicji/"
+      },
+      {
+        "title": "Prezydent.pl – Prezydent podpisał 9 ustaw; 2 zawetował: likwidacja CBA, ustrój rolny (11.05.2026)",
+        "url": "https://www.prezydent.pl/prawo/ustawy-zawetowane/prezydent-podpisal-9-ustaw-2-zawetowal,120110"
+      },
+      {
+        "title": "PolsatNews – Pięć podpisów i jedno weto. Prezydent zawetował rozszerzenie systemu SENT (02.06.2026)",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-06-02/piec-podpisow-i-weto-najnowsza-decyzja-prezydenta/"
+      },
+      {
+        "title": "Prezydent.pl – Prezydent RP podpisał siedem ustaw; zawetował trzy (11.06.2026)",
+        "url": "https://www.prezydent.pl/aktualnosci/wydarzenia/prezydent-rp-podpisal-siedem-ustaw-zawetowal-trzy,121634"
+      },
+      {
+        "title": "PolsatNews – Ustawa o kryptoaktywach. Jest trzecie weto prezydenta Karola Nawrockiego (11.06.2026)",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-06-11/trzecie-weto-w-sprawie-kryptoaktywow-decyzja-karola-nawrockiego/"
+      },
+      {
+        "title": "Money.pl – Weto po raz trzeci. Karol Nawrocki zdecydował ws. ustawy o kryptoaktywach (11.06.2026)",
+        "url": "https://www.money.pl/gospodarka/weto-po-raz-trzeci-karol-nawrocki-zdecydowal-ws-ustawy-o-kryptoaktywach-7295736035317760a.html"
       }
     ]
   },
@@ -311,7 +331,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 192,
+        "value": 213,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -376,6 +396,18 @@
       {
         "title": "Prezydent.pl – Prezydent RP podpisał dwie ustawy, dwie zawetował (30.04.2026)",
         "url": "https://www.prezydent.pl/aktualnosci/wydarzenia/prezydent-rp-podpisal-dwie-ustawy-dwie-zawetowal,115305"
+      },
+      {
+        "title": "Prezydent.pl – Ustawy podpisane w maju 2026 r. (9 ustaw, wszystkie 11.05.2026)",
+        "url": "https://www.prezydent.pl/prawo/ustawy-podpisane/ustawy-podpisane-w-kwietniu-2026-r,120142"
+      },
+      {
+        "title": "PolsatNews – Pięć podpisów i jedno weto. Najnowsza decyzja prezydenta (02.06.2026)",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-06-02/piec-podpisow-i-weto-najnowsza-decyzja-prezydenta/"
+      },
+      {
+        "title": "Prezydent.pl – Prezydent RP podpisał siedem ustaw; zawetował trzy (11.06.2026)",
+        "url": "https://www.prezydent.pl/aktualnosci/wydarzenia/prezydent-rp-podpisal-siedem-ustaw-zawetowal-trzy,121634"
       }
     ]
   },

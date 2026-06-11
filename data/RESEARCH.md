@@ -4,6 +4,7 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 
 **Data file to update:** `data/presidential-stats.json`
 **Last full review:** 2026-05-05
+**Last partial update:** 2026-06-11 (weta + podpisane ustawy; ułaskawienia/TK/inicjatywy sprawdzone — bez zmian)
 
 ---
 
@@ -37,7 +38,7 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 | Komorowski (10-15) | 4 | 930 | 360 | 12 | 26 |
 | Duda (15-20) | 9 | 1066 | 94 | 10 | 31 |
 | Duda (20-25) | 10 | 784 | 52 | 51 | 31 |
-| **Nawrocki (25–)** | **31** | **192** | **4** | **8** | **17** |
+| **Nawrocki (25–)** | **37** | **213** | **4** | **8** | **17** |
 
 ---
 
@@ -59,7 +60,12 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 - https://konkret24.tvn24.pl/polityka/karol-nawrocki-zawetowal-rekordowa-liczbe-ustaw-policzylismy-st8881758 — Konkret24 fact-check with running totals
 - https://www.prezydent.pl/prawo/ustawy-zawetowane — Official list of vetoed laws
 
-**Search tips:** Nawrocki's veto count changes frequently. Check wetomat.pl for live count, TVN24 and Onet for the latest running tally. Historical values (pre-2025) are stable.
+**New vetoes since May review (counted 2026-06-11, total 37):**
+- 11.05.2026 — 2 weta: likwidacja CBA / koordynacja antykorupcyjna + ustrój rolny (https://www.prezydent.pl/prawo/ustawy-zawetowane/prezydent-podpisal-9-ustaw-2-zawetowal,120110)
+- 02.06.2026 — 1 weto: rozszerzenie systemu SENT (https://www.polsatnews.pl/wiadomosc/2026-06-02/piec-podpisow-i-weto-najnowsza-decyzja-prezydenta/)
+- 11.06.2026 — 3 weta: Ordynacja podatkowa/KKS, **rynek kryptoaktywów (trzecie weto tej ustawy — poprzednie 01.12.2025 i 12.02.2026)**, świadczenia opieki zdrowotnej (choroby zakaźne / egzaminy językowe lekarzy) (https://www.prezydent.pl/aktualnosci/wydarzenia/prezydent-rp-podpisal-siedem-ustaw-zawetowal-trzy,121634)
+
+**Search tips:** Nawrocki's veto count changes frequently. Check wetomat.pl for live count, TVN24 and Onet for the latest running tally. Historical values (pre-2025) are stable. Note: wetomat.pl and prezydent.pl block automated fetches (HTTP 403) — verify counts via news coverage of official communiqués ("prezydent podpisał X ustaw; Y zawetował").
 
 ---
 
@@ -77,7 +83,7 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 **New sources found (Feb 2026):**
 - https://www.prezydent.pl/prawo/ustawy-podpisane — Official monthly breakdown of signed laws (best primary source — count per month)
 
-**Search tips:** Count monthly from prezydent.pl/prawo/ustawy-podpisane. Aug=31, Sep=3, Oct=24, Nov=30, Dec=44, Jan 2026=15, Feb 2026=10, Mar 2026=10 (as of Mar 9) → total 167. Often published alongside veto counts.
+**Search tips:** Count monthly from prezydent.pl/prawo/ustawy-podpisane. Aug=31, Sep=3, Oct=24, Nov=30, Dec=44, Jan 2026=15, Feb 2026=10, Mar 2026=10 (as of Mar 9) → total 167. Often published alongside veto counts. Update 11.06.2026: 192 (stan 05.05) + maj=9 (wszystkie 11.05) + 02.06=5 + 11.06=7 → **213**. Oficjalna strona miesięczna maja: https://www.prezydent.pl/prawo/ustawy-podpisane/ustawy-podpisane-w-kwietniu-2026-r,120142 (slug mówi "kwietniu", ale to strona majowa — liczy się ID).
 
 ---
 
