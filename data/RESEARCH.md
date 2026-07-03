@@ -3,8 +3,10 @@
 This file is a quick-reference for AI research sessions. It summarizes all current values and sources so an AI can compare against new findings and update `presidential-stats.json`.
 
 **Data file to update:** `data/presidential-stats.json`
-**Last full review:** 2026-07-03 (wszystkie 5 kategorii; skorygowano zaniżone liczniki podpisanych ustaw i inicjatyw — szczegóły w sekcjach)
+**Last full review:** 2026-07-03 (wszystkie 5 kategorii **zweryfikowane enumeratywnie ze źródła kanonicznego** — patrz sekcja „Programmatic verification" na dole; skorygowano: podpisane 213→236, weta 37→39, TK 8→10, inicjatywy 17→22)
 **Last partial update:** 2026-06-11 (weta + podpisane ustawy; ułaskawienia/TK/inicjatywy sprawdzone — bez zmian)
+
+> **WAŻNE (lekcja z 03.07.2026):** liczenie wyłącznie przyrostowe (news z okresu od ostatniego przeglądu) systematycznie gubi pozycje — tak przeoczono 5 inicjatyw i 1 wniosek do TK. Każdy przegląd MUSI kończyć się enumeracją z oficjalnych list prezydent.pl (dostępnych przez `curl` — sekcja na dole) i uzgodnieniem z publicznie podawanymi sumami.
 
 ---
 
@@ -38,7 +40,7 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 | Komorowski (10-15) | 4 | 930 | 360 | 12 | 26 |
 | Duda (15-20) | 9 | 1066 | 94 | 10 | 31 |
 | Duda (20-25) | 10 | 784 | 52 | 51 | 31 |
-| **Nawrocki (25–)** | **39** | **236** | **4** | **9** | **19** |
+| **Nawrocki (25–)** | **39** | **236** | **4** | **10** | **22** |
 
 ---
 
@@ -89,11 +91,18 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 
 **Search tips:** Count monthly from prezydent.pl/prawo/ustawy-podpisane. Aug=31, Sep=3, Oct=24, Nov=30, Dec=44, Jan 2026=15, Feb 2026=10, Mar 2026=10 (as of Mar 9) → total 167. Often published alongside veto counts. Update 11.06.2026: 192 (stan 05.05) + maj=9 (wszystkie 11.05) + 02.06=5 + 11.06=7 → **213**. Oficjalna strona miesięczna maja: https://www.prezydent.pl/prawo/ustawy-podpisane/ustawy-podpisane-w-kwietniu-2026-r,120142 (slug mówi "kwietniu", ale to strona majowa — liczy się ID).
 
-**⚠️ Korekta 03.07.2026 — licznik przypięty do oficjalnych sum KPRP:** nasz dotychczasowy licznik oparty na komunikatach prasowych (213 na 11.06) był zaniżony o ~10 ustaw — miesięczne strony oficjalne zawierają też ustawy podpisywane bez komunikatów (np. ratyfikacyjne). Oficjalne punkty odniesienia:
-- 19.06.2026 — prezydent publicznie: „podpisałem **229** ustaw" (po podpisaniu 6 tego dnia; https://www.polsatnews.pl/wiadomosc/2026-06-19/kolejne-ustawy-z-podpisem-prezydenta-nawrocki-zdradza-szczegoly/)
-- 29.06.2026 — +2 (nowela KK + uproszczenie procedur administracyjnych) → łącznie **231** (podane wprost: https://wpolityce.pl/polityka/763791-prezydent-nawrocki-podjal-decyzje-ws-dwoch-kolejnych-ustaw)
-- 02.07.2026 — +5 (m.in. spółdzielnie uczniowskie/Prawo oświatowe, deregulacja energetyki — czytelniejsze rachunki, nowela KPK/KKS-ENA) → **236** (https://dorzeczy.pl/opinie/909709/prezydent-podpisal-piec-ustaw-sa-zmiany-dla-szkol-energetyki-i-pomorza.html)
-Strona miesięczna czerwca: https://www.prezydent.pl/prawo/ustawy-podpisane/ustawy-podpisane-w-czerwcu-2026-r,121443. Przy kolejnych aktualizacjach dodawaj przyrosty do 236 (stan 02.07.2026) i szukaj publicznie podawanych sum („podpisałem X ustaw") jako punktów kontrolnych.
+**⚠️ Korekta 03.07.2026 — licznik zweryfikowany enumeratywnie (236):** dotychczasowy licznik oparty na komunikatach prasowych (213 na 11.06) był zaniżony o 10 ustaw — komunikaty nie obejmują wszystkich podpisów (np. ratyfikacyjnych). **Kanoniczna metoda: sumowanie oficjalnych stron miesięcznych** (dostępne curl-em, patrz „Programmatic verification"). Zliczenie 03.07.2026:
+
+| Miesiąc | Ustaw | Miesiąc | Ustaw |
+|---|---|---|---|
+| 08.2025 | 31 | 02.2026 | 10 |
+| 09.2025 | 3 | 03.2026 | 27 |
+| 10.2025 | 24 | 04.2026 | 15 |
+| 11.2025 | 30 | 05.2026 | 12 |
+| 12.2025 | 44 | 06.2026 | 20 (02.06=5, 11.06=7, 19.06=6, 29.06=2) |
+| 01.2026 | 15 | 07.2026 | 5 (wszystkie 02.07) |
+
+**Suma = 236.** Zgadza się co do sztuki z publicznymi kotwicami: „podpisałem 229 ustaw" (prezydent, 19.06; https://www.polsatnews.pl/wiadomosc/2026-06-19/kolejne-ustawy-z-podpisem-prezydenta-nawrocki-zdradza-szczegoly/), 231 po 29.06 (https://wpolityce.pl/polityka/763791-prezydent-nawrocki-podjal-decyzje-ws-dwoch-kolejnych-ustaw), +5 na 02.07 (https://dorzeczy.pl/opinie/909709/prezydent-podpisal-piec-ustaw-sa-zmiany-dla-szkol-energetyki-i-pomorza.html). Uwaga na pułapki parsowania stron miesięcznych: część miesięcy nie ma numeracji (IX, I, V, VII), a w kwietniu numery 10 i 12 są zjedzone przez formatowanie — licz po wzorcu „podpisana <data>" ORAZ po numeracji i bierz spójny wynik.
 
 ---
 
@@ -131,13 +140,21 @@ Strona miesięczna czerwca: https://www.prezydent.pl/prawo/ustawy-podpisane/usta
 **New sources found (Feb–Mar 2026):**
 - https://www.prezydent.pl/prawo/wnioski-do-tk — Official list (5 motions total as of Mar 2026)
 - Budget 2026 sent to TK (Jan 19, 2026): https://www.prawo.pl/podatki/prezydent-podpisal-budzet-na-2026-rok,536834.html
-- Road safety law sent to TK (Dec 22, 2025): https://www.prezydent.pl/prawo/wnioski-do-tk/wniosek-do-trybunalu-konstytucyjnego,110189
+- Road safety law sent to TK (Dec 22, 2025): https://www.prezydent.pl/prawo/wnioski-do-tk/wniosek-do-tk-w-trybie-kontroli-nastepczej,112479 (strona 110189 to wniosek ws. KPP z 12.11.2025)
 - Cybersecurity/KSC law sent to TK (Feb 19, 2026): https://www.prawo.pl/biznes/prezydent-podpisal-ustawe-o-krajowym-systemie-cyberbezpieczenstwa-i-skierowal-wniosek-do-tk,1537069.html
 
-**Search tips:** Check prezydent.pl/prawo/wnioski-do-tk/ for an official list of current president's TK motions. 5 total as of Mar 2026: Min. Sprawiedliwości regulation (Oct), KPP delegalization (Nov), road safety (Dec), budget 2026 (Jan), cybersecurity/KSC law (Feb 19, 2026). Then: PIP reform (02.04), +2 preventive motions (mid-Apr, „podpisał 7 ustaw, dwie do TK"), judges' oath (27.04) → 8 (stan 05.05).
+**Pełna lista wniosków (zweryfikowana 03.07.2026, łącznie 10):**
+1. 28.10.2025 — rozporządzenie Min. Sprawiedliwości (+ zawiadomienie do prokuratury; https://www.prezydent.pl/prawo/wnioski-do-tk/wniosek-do-tk-ws-rozporzadzenia-ministra-sprawiedliwosci,109371)
+2. 12.11.2025 — delegalizacja Komunistycznej Partii Polski (cele i działalność partii; **UWAGA: to jest strona id 110189** — wcześniej błędnie przypisana w tym pliku do bezpieczeństwa ruchu drogowego; https://www.prezydent.pl/prawo/wnioski-do-tk/wniosek-do-trybunalu-konstytucyjnego,110189)
+3. 22.12.2025 — bezpieczeństwo ruchu drogowego, kontrola następcza (definicja „nielegalnego wyścigu"; https://www.prezydent.pl/prawo/wnioski-do-tk/wniosek-do-tk-w-trybie-kontroli-nastepczej,112479)
+4. 19.01.2026 — ustawa budżetowa 2026 (https://www.prezydent.pl/prawo/wnioski-do-tk/prezydent-ustawa-budzetowa,113542)
+5. 19.02.2026 — ustawa o Krajowym Systemie Cyberbezpieczeństwa, kontrola następcza (**brak w sekcji wnioski-do-tk na prezydent.pl** — sekcja jest niekompletna; źródło: https://www.prawo.pl/biznes/prezydent-podpisal-ustawe-o-krajowym-systemie-cyberbezpieczenstwa-i-skierowal-wniosek-do-tk,1537069.html)
+6-7. 02.04.2026 — **dwa** wnioski w jednym komunikacie: Państwowa Inspekcja Pracy (druk 2250) + publiczny transport zbiorowy (druk 2245), kontrola następcza (https://www.prezydent.pl/prawo/wnioski-do-tk/prezydent-podpisal-7-ustaw-dwie-skierowal-do-trybunalu-konstytucyjnego,118082). UWAGA: PIP to jeden z tych dwóch, nie osobny wniosek — wcześniejsze liczenie „PIP + 2" było błędne (kompensowało się z innym błędem).
+8. 27.04.2026 — ślubowanie nowych sędziów TK (**brak w sekcji wnioski-do-tk**; https://www.rp.pl/sady-i-trybunaly/art44255101-slubowanie-nowych-sedziow-tk-prezydent-skierowal-wniosek-do-trybunalu)
+9. 11.05.2026 — ustawa o zmianie ustawy o transporcie kolejowym, kontrola następcza (**ukryty w komunikacie „podpisał 9 ustaw; 2 zawetował"** — wniosek wymieniony dopiero w treści, nie w tytule! https://www.prezydent.pl/prawo/wnioski-do-tk/prezydent-podpisal-9-ustaw-2-zawetowal,120110)
+10. 02.07.2026 — nowela ustawy o akcyzie (e-papierosy na indukcję), kontrola prewencyjna (https://www.wnp.pl/rynki/rzad-szuka-pieniedzy-prezydent-kieruje-nowele-ustawy-o-akcyzie-do-trybunalu-konstytucyjnego,1077840.html)
 
-**New motion counted 2026-07-03 (total 9):**
-- 02.07.2026 — nowela ustawy o akcyzie (e-papierosy na indukcję elektromagnetyczną) skierowana do TK w trybie kontroli prewencyjnej; zarzuty: chaos legislacyjny, krótkie vacatio legis (https://www.wnp.pl/rynki/rzad-szuka-pieniedzy-prezydent-kieruje-nowele-ustawy-o-akcyzie-do-trybunalu-konstytucyjnego,1077840.html; potwierdzenie: https://www.niedziela.pl/artykul/125662/Prezydent-podpisal-5-ustaw)
+**Search tips:** sekcja prezydent.pl/prawo/wnioski-do-tk jest NIEKOMPLETNA (brakuje w niej KSC i ślubowania sędziów) i zawiera komunikaty zbiorcze, w których wniosek do TK pojawia się tylko w treści. Zawsze czytaj pełną treść komunikatów o podpisaniu ustaw — mogą zawierać wnioski do TK.
 
 ---
 
@@ -160,22 +177,89 @@ Strona miesięczna czerwca: https://www.prezydent.pl/prawo/ustawy-podpisane/usta
 
 **Search tips:** prezydent.pl/prawo/inicjatywy-ustawodawcze is the canonical list. Also check Sejm website for presidential bill submissions.
 
-**⚠️ Korekta 03.07.2026 (17 → 19):** wcześniejsze liczenie przyrostowe przeoczyło dwa projekty:
-- **Polski Fundusz Inwestycji Obronnych** („polskie SAFE 0%") — złożony do Sejmu 10.03.2026 (Bogucki: „Sejm może już pracować nad złożonym projektem"; https://www.prawo.pl/samorzad/prezydencki-projekt-ustawy-o-polskim-funduszu-inwestycji-obronnych-juz-w-sejmie,1540437.html; na oficjalnej liście: https://www.prezydent.pl/prawo/inicjatywy-ustawodawcze/spotkanie-ws-polskiego-safe-0,116695). Uwaga: brak jeszcze druku sejmowego „przedstawiony przez Prezydenta RP"; PSL złożyło 24.03 własną, „poprawioną" wersję jako projekt poselski.
-- **Rynek kryptoaktywów** — złożony 06.05.2026 (dzień po pełnym przeglądzie 05.05), druk sejmowy nr 2528 z 08.05.2026 (https://www.rp.pl/prawo-dla-ciebie/art44322471-karol-nawrocki-zlozyl-w-sejmie-projekt-ustawy-o-kryptoaktywach-wyciagnieta-reka-pana-prezydenta)
+**⚠️ Korekta 03.07.2026 (17 → 22, enumeracja oficjalnej listy):** liczenie przyrostowe przeoczyło aż 5 projektów. Oficjalna lista prezydent.pl/prawo/inicjatywy-ustawodawcze (4 strony paginacji, pobrana curl-em 03.07.2026) zawiera **22 pozycje**:
+1. 07.08.2025 — TAK! dla CPK (pierwsza inicjatywa)
+2. 08.08.2025 — „PIT Zero. Rodzina na plus"
+3. 09.08.2025 — „Ochrona polskiej wsi"
+4. 21.08.2025 — zamrożenie cen energii elektrycznej
+5. 25.08.2025 — nowelizacja ustawy o pomocy obywatelom Ukrainy
+6. 29.08.2025 — Fundusz Rozwoju Technologii Przełomowych
+7. 29.09.2025 — zmiany w ustawie o IPN i Kodeksie karnym
+8. 29.09.2025 — zmiana ustawy o obywatelstwie polskim
+9. 17.10.2025 — „Tak! Dla Polskich Portów" (druk 2394 nadany dopiero 27.03.2026!)
+10. 03.11.2025 — „Godna emerytura"
+11. 07.11.2025 — „Tani prąd –33%"
+12. 07.11.2025 — nowelizacja Prawa o ruchu drogowym
+13. 17.11.2025 — zmiany w ustawie o Funduszu Medycznym
+14. 02.12.2025 — nowelizacja ustawy o ochronie zwierząt
+15. 13.01.2026 — nowelizacja ustawy o funkcjonowaniu górnictwa węgla kamiennego
+16. 19.02.2026 — przywrócenie prawa do sądu i rozpoznanie sprawy bez nieuzasadnionej zwłoki
+17. 10.03.2026 — Polski Fundusz Inwestycji Obronnych („polskie SAFE 0%") — **przeoczony w przeglądzie 05.05**
+18. 27.03.2026 — zmiany w Kodeksie postępowania karnego — **przeoczony**
+19. 07.04.2026 — ochrona funkcji produkcyjnej wsi
+20. 06.05.2026 — rynek kryptoaktywów (druk 2528 z 08.05) — **przeoczony w checku 11.06**
+21. 11.06.2026 — świadczenia opieki zdrowotnej finansowane ze środków publicznych (HIV/HCV; ogłoszony przy wecie ustawy o świadczeniach) — **przeoczony**
+22. 29.06.2026 — ustanowienie Dnia Działacza Opozycji Antykomunistycznej i Osoby Represjonowanej
 
-**Weryfikacja przez API Sejmu (obchodzi CAPTCHA na www):** `curl https://api.sejm.gov.pl/sejm/term10/prints` → filtruj tytuły zawierające „przedstawiony przez Prezydenta" i deliveryDate ≥ 2025-08-06. Stan 03.07.2026: 14 druków (druki nadawane z ~3-miesięcznym opóźnieniem — to dolna granica; np. projekt portowy „Tak! Dla Polskich Portów" z X 2025 dostał druk 2394 dopiero 27.03.2026). Timeline zliczeń: 13 (03.12.2025, Polsat) → 16 (Feb 2026, lista oficjalna) → +PFIO (10.03) → +wieś (07.04) → +krypto (06.05) = **19**. Brak nowych inicjatyw w czerwcu 2026 (sprawdzono).
+**Weryfikacja przez API Sejmu (dolna granica):** `curl https://api.sejm.gov.pl/sejm/term10/prints` → filtruj tytuły zawierające „przedstawiony przez Prezydenta" i deliveryDate ≥ 2025-08-06. Stan 03.07.2026: 14 druków — druki nadawane z opóźnieniem 1–5 miesięcy, więc API Sejmu służy tylko jako cross-check, nie jako licznik. Licznikiem jest enumeracja oficjalnej listy (patrz sekcja „Programmatic verification").
 
 ---
 
 ## How to Update
 
-1. **Search** using the queries listed per category, adding the current year
-2. **Compare** new findings with the values in the summary table above
-3. **Update** `data/presidential-stats.json` — change the `value` field for the relevant president/category
-4. **Add new sources** to the `sources` array of the category if you found a new reference
-5. **Update this file** — change the summary table and the "Last full review" date
-6. Historical presidents (id 1-8) rarely change — focus research on **Nawrocki (id 9)**
+1. **Enumerate** — pobierz oficjalne listy z prezydent.pl curl-em i policz od zera (sekcja „Programmatic verification" niżej). To jest podstawa licznika, nie news-y.
+2. **Anchor** — znajdź publicznie podane sumy („podpisałem X ustaw, Y zawetowałem" — prezydent/rzecznik podają je co kilka tygodni) i uzgodnij z enumeracją. Rozbieżność = szukaj błędu, nie uśredniaj.
+3. **Search** news z okresu od ostatniego przeglądu (zapytania per kategoria niżej) — do wychwycenia wydarzeń świeższych niż listy oficjalne i jako źródła do `sources`.
+4. **Update** `data/presidential-stats.json` — change the `value` field for the relevant president/category
+5. **Add new sources** to the `sources` array of the category if you found a new reference
+6. **Update this file** — change the summary table, per-category notes and the "Last full review" date
+7. Historical presidents (id 1-8) rarely change — focus research on **Nawrocki (id 9)**
+8. **Bump footer date** in `components/stats-dashboard.tsx` (`t.lastUpdated`: DD.MM.YYYY)
+
+---
+
+## Programmatic verification (APIs & metodyka) — dopisane 03.07.2026
+
+### Dostęp do prezydent.pl (źródło kanoniczne)
+
+**prezydent.pl zwraca 200 dla zwykłego `curl`** — blokuje (403) tylko narzędzia z botowym User-Agentem (WebFetch itp.). Wayback Machine niedostępny z tego środowiska, wetomat.pl → 403. Czyli: **używaj `curl` bezpośrednio na prezydent.pl**.
+
+Kluczowe URL-e (wszystkie z paginacją `/page,N` gdy lista długa):
+- `https://www.prezydent.pl/prawo/inicjatywy-ustawodawcze` — 22 pozycje na 03.07.2026 (4 strony)
+- `https://www.prezydent.pl/prawo/ustawy-zawetowane` — wpisy-komunikaty (jeden wpis = 1–4 weta!)
+- `https://www.prezydent.pl/prawo/wnioski-do-tk` — NIEKOMPLETNA (patrz sekcja TK)
+- `https://www.prezydent.pl/prawo/ustawy-podpisane` — linki do stron miesięcznych (kanoniczny licznik podpisów)
+- `https://www.prezydent.pl/aktualnosci/prawo-laski/2026` — decyzje ułaskawieniowe (2 wpisy = 4 osoby na 03.07.2026)
+
+Parsowanie HTML: karty list mają `class="articles-item"`, tytuł w atrybucie `title=""` linku, data w `articles-item__date`; treść artykułu w `articles-single__description`. Strony miesięczne podpisanych ustaw: pozycje „N. Ustawa z dnia … (nr druku sejmowego NNNN) – podpisana D miesiąca RRRR r.".
+
+```bash
+# przykład: pobranie listy inicjatyw (wszystkie strony paginacji)
+curl -s "https://www.prezydent.pl/prawo/inicjatywy-ustawodawcze" -o init-1.html
+for p in 2 3 4; do curl -s "https://www.prezydent.pl/prawo/inicjatywy-ustawodawcze/page,$p" -o init-$p.html; done
+# potem: wyciągnij pary (title, articles-item__date) i policz unikalne URL-e
+```
+
+### API Sejmu (bez CAPTCHA — www.sejm.gov.pl ma CAPTCHA, API nie)
+
+- `https://api.sejm.gov.pl/sejm/term10/prints` — wszystkie druki X kadencji (JSON). Prezydenckie projekty: tytuł zaczyna się od „Przedstawiony przez Prezydenta Rzeczypospolitej Polskiej projekt ustawy…". **Dolna granica** liczby inicjatyw: druki nadawane 1–5 mies. po złożeniu (np. „Tak! Dla Polskich Portów" z 17.10.2025 → druk 2394 z 27.03.2026). Stan 03.07.2026: 14 druków vs 22 inicjatywy na liście oficjalnej.
+- `https://api.sejm.gov.pl/eli/acts/DU/2026` — ELI / Dziennik Ustaw (JSON, pole `count`, `items[].type` == „Ustawa"). Cross-check publikacji ustaw (uwaga: data publikacji ≠ data podpisu; publikowane są też ustawy po odrzuceniu weta).
+
+```bash
+curl -s "https://api.sejm.gov.pl/sejm/term10/prints" -o prints.json
+node -e "const a=require('./prints.json');const p=a.filter(d=>(d.title||'').toLowerCase().includes('przedstawiony przez prezydenta')&&d.deliveryDate>='2025-08-06');console.log(p.length);p.forEach(d=>console.log(d.number,d.deliveryDate,d.title.slice(0,90)))"
+```
+
+### Pułapki (wszystkie zaobserwowane w praktyce)
+
+1. **Sekcje tematyczne prezydent.pl są niekompletne.** W `ustawy-zawetowane` brakuje weta SENT z 02.06.2026; w `wnioski-do-tk` brakuje wniosku KSC (19.02) i ślubowania sędziów (27.04). Sekcje ≠ rejestr; traktuj jako pomocnicze.
+2. **Komunikaty zbiorcze ukrywają pozycje w treści.** „Prezydent podpisał 9 ustaw; 2 zawetował" (11.05.2026) zawiera W TREŚCI także wniosek do TK ws. transportu kolejowego — niewidoczny w tytule. Zawsze czytaj pełną treść komunikatu.
+3. **Jeden wpis listy ≠ jedna pozycja.** Wpis weta może obejmować 1–4 ustawy; komunikat TK z 02.04 = 2 wnioski. Licz pozycje z treści, nie wpisy list.
+4. **Numeracja stron miesięcznych bywa zepsuta** (kwiecień 2026: brak numerów 10 i 12 w HTML) i część miesięcy jej nie ma — licz dwiema metodami (numeracja + wystąpienia „podpisana <data>") i porównaj.
+5. **Stare newsy wyskakują w wynikach świeżych zapytań** (weto ws. DSA ze stycznia wyglądało jak czerwcowe). Zawsze sprawdzaj datę publikacji artykułu, nie datę z zapytania.
+6. **Liczenie przyrostowe dryfuje.** Między 05.05 a 03.07 przyrostowy licznik zgubił 5 inicjatyw i 1 wniosek TK, a podpisane ustawy rozjechały się o 10. Pełna enumeracja przy KAŻDYM przeglądzie.
+7. **Kotwice publiczne są wiarygodne.** Sumy podawane przez prezydenta/rzecznika („podpisałem 229 ustaw" 19.06; „231" 29.06 wg wPolityce) zgodziły się co do sztuki z enumeracją stron miesięcznych — używaj ich do uzgodnienia.
+8. **Slugi URL bywają mylące** (strona majowa podpisów miała slug „…-w-kwietniu-…" zanim ją poprawiono; strona id 110189 „Wniosek do TK" to KPP z 12.11, nie ruch drogowy) — identyfikuj strony po treści i ID, nie po slugu.
 
 ## General Search Queries for Full Update
 

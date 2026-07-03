@@ -509,7 +509,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 9,
+        "value": 10,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -548,8 +548,8 @@
         "url": "https://www.prezydent.pl/prawo/wnioski-do-tk/wniosek-do-tk-ws-rozporzadzenia-ministra-sprawiedliwosci,109371"
       },
       {
-        "title": "Prezydent.pl – Wniosek do TK ws. ustawy o bezpieczeństwie ruchu drogowego (22.12.2025)",
-        "url": "https://www.prezydent.pl/prawo/wnioski-do-tk/wniosek-do-trybunalu-konstytucyjnego,110189"
+        "title": "Prezydent.pl – Wniosek do TK ws. ustawy o bezpieczeństwie ruchu drogowego, kontrola następcza (22.12.2025)",
+        "url": "https://www.prezydent.pl/prawo/wnioski-do-tk/wniosek-do-tk-w-trybie-kontroli-nastepczej,112479"
       },
       {
         "title": "Prezydent.pl – Podpisanie ustawy budżetowej i skierowanie do TK (19.01.2026)",
@@ -582,6 +582,10 @@
       {
         "title": "Niedziela.pl – Prezydent podpisał 5 ustaw; 2 zawetował i jedną skierował do TK w trybie kontroli prewencyjnej (02.07.2026)",
         "url": "https://www.niedziela.pl/artykul/125662/Prezydent-podpisal-5-ustaw"
+      },
+      {
+        "title": "Prezydent.pl – Wnioski do TK (oficjalna sekcja; komunikat z 11.05.2026 zawiera też wniosek ws. ustawy o transporcie kolejowym)",
+        "url": "https://www.prezydent.pl/prawo/wnioski-do-tk"
       }
     ]
   },
@@ -655,7 +659,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 19,
+        "value": 22,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -698,7 +702,7 @@
         "url": "https://www.polsatnews.pl/wiadomosc/2025-12-03/sejm-zadecyduje-o-prezydenckim-wecie-jest-decyzja-koalicji-w-tej-sprawie/"
       },
       {
-        "title": "Prezydent.pl – Inicjatywy ustawodawcze (stan na 27.02.2026)",
+        "title": "Prezydent.pl – Inicjatywy ustawodawcze (oficjalna lista, 22 pozycje – stan na 03.07.2026)",
         "url": "https://www.prezydent.pl/prawo/inicjatywy-ustawodawcze"
       },
       {
