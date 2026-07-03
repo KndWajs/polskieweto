@@ -1,6 +1,7 @@
 "use client"
 
 import { StatCard } from "./stat-card"
+import { TrendChart } from "./trend-chart"
 import type { Language } from "@/lib/translations"
 
 interface PresidentData {
@@ -74,6 +75,8 @@ export function CategoryContent({
           </div>
         ))}
       </div>
+
+      <TrendChart data={data} language={language} label={categoryLabel} />
 
       <div className="mt-8 pt-6 border-t border-border">
         <h3 className="text-sm font-medium text-muted-foreground mb-3">{sourcesLabel}:</h3>

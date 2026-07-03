@@ -27,6 +27,10 @@ export const translations = {
       inicjatywyUstawodawcze: "Inicjatywy ustawodawcze",
     },
     lastUpdated: "Ostatnia aktualizacja danych",
+    trend: {
+      title: "Trend na przestrzeni kadencji",
+      ongoing: "kadencja w trakcie",
+    },
     footer: {
       simplygo: "SimplyGo - Odkrywaj Aktywności",
       wajs: "wajs.tech",
@@ -60,6 +64,10 @@ export const translations = {
       inicjatywyUstawodawcze: "Legislative Initiatives",
     },
     lastUpdated: "Data last updated",
+    trend: {
+      title: "Trend across presidential terms",
+      ongoing: "term in progress",
+    },
     footer: {
       simplygo: "SimplyGo - Discover Activities",
       wajs: "wajs.tech",
