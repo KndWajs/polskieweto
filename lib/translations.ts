@@ -30,6 +30,8 @@ export const translations = {
     trend: {
       title: "Trend na przestrzeni kadencji",
       ongoing: "kadencja w trakcie",
+      perYear: "Na rok",
+      perYearUnit: "rok",
     },
     footer: {
       simplygo: "SimplyGo - Odkrywaj Aktywności",
@@ -67,6 +69,8 @@ export const translations = {
     trend: {
       title: "Trend across presidential terms",
       ongoing: "term in progress",
+      perYear: "Per year",
+      perYearUnit: "year",
     },
     footer: {
       simplygo: "SimplyGo - Discover Activities",
