@@ -75,6 +75,7 @@ export function TrendChart({ data, language, label }: TrendChartProps) {
         startYear: termStartYear(d.term),
         tick: `${termStartYear(d.term)}${isOngoing(d.term) ? "*" : ""}`,
         dotColor: partyDotColors[d.party] ?? "#6b7280",
+        ongoing: isOngoing(d.term),
         perYear,
         displayValue: mode === "perYear" ? perYear : d.value,
       }
@@ -157,16 +158,28 @@ export function TrendChart({ data, language, label }: TrendChartProps) {
             stroke="var(--color-displayValue)"
             strokeWidth={2}
             isAnimationActive={false}
-            dot={(props: { cx?: number; cy?: number; payload?: { id: number; dotColor: string } }) => (
-              <circle
-                key={`dot-${props.payload?.id}`}
-                cx={props.cx}
-                cy={props.cy}
-                r={4.5}
-                fill={props.payload?.dotColor}
-                stroke="var(--background)"
-                strokeWidth={1.5}
-              />
+            dot={(props: { cx?: number; cy?: number; payload?: { id: number; dotColor: string; ongoing: boolean } }) => (
+              <g key={`dot-${props.payload?.id}`}>
+                {props.payload?.ongoing && (
+                  <circle
+                    cx={props.cx}
+                    cy={props.cy}
+                    r={5.5}
+                    fill={props.payload.dotColor}
+                    opacity={0.5}
+                    className="motion-safe:animate-ping"
+                    style={{ transformBox: "fill-box", transformOrigin: "center" }}
+                  />
+                )}
+                <circle
+                  cx={props.cx}
+                  cy={props.cy}
+                  r={4.5}
+                  fill={props.payload?.dotColor}
+                  stroke="var(--background)"
+                  strokeWidth={1.5}
+                />
+              </g>
             )}
             activeDot={{ r: 6 }}
           >
