@@ -69,7 +69,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 39,
+        "value": 41,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -162,6 +162,18 @@
       {
         "title": "Radio Maryja – Prezydent podpisał pięć ustaw, jedną skierował do TK, a dwie zawetował (02.07.2026)",
         "url": "https://www.radiomaryja.pl/informacje/prezydent-karol-nawrocki-podpisal-piec-ustaw-jedna-skierowal-do-tk-a-dwie-zawetowal/"
+      },
+      {
+        "title": "Prezydent.pl – Prezydent RP podpisał 9 ustaw; 2 zawetował (status osoby najbliższej / związki partnerskie, druki 2110 i 2111) (17.07.2026)",
+        "url": "https://www.prezydent.pl/prawo/ustawy-zawetowane/prezydent-rp-podpisal-9-ustaw-2-zawetowal,123465"
+      },
+      {
+        "title": "Rzeczpospolita – Prezydent podpisał ustawę frankową, zawetował ustawę o statusie osoby najbliższej (17.07.2026)",
+        "url": "https://www.rp.pl/prawo-w-polsce/art44842161-prezydent-podpisal-ustawe-frankowa-zawetowal-ustawe-o-statusie-osoby-najblizszej"
+      },
+      {
+        "title": "Do Rzeczy – Ustawa o statusie osoby najbliższej. Weto Nawrockiego (17.07.2026)",
+        "url": "https://dorzeczy.pl/kraj/916009/ustawa-o-statusie-osoby-najblizszej-weto-nawrockiego.html"
       }
     ]
   },
@@ -343,7 +355,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 236,
+        "value": 245,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -436,6 +448,14 @@
       {
         "title": "Do Rzeczy – Prezydent podpisał pięć ustaw. Zmiany dla szkół, energetyki i Pomorza (02.07.2026)",
         "url": "https://dorzeczy.pl/opinie/909709/prezydent-podpisal-piec-ustaw-sa-zmiany-dla-szkol-energetyki-i-pomorza.html"
+      },
+      {
+        "title": "Prezydent.pl – Ustawy podpisane w lipcu 2026 r. (14 ustaw: 5 z 02.07, 9 z 17.07)",
+        "url": "https://www.prezydent.pl/prawo/ustawy-podpisane/ustawy-podpisane-w-lipcu-2026-r,122839"
+      },
+      {
+        "title": "Prezydent.pl – Prezydent RP podpisał 9 ustaw; 2 zawetował (m.in. ustawa frankowa; jedna skierowana do TK) (17.07.2026)",
+        "url": "https://www.prezydent.pl/aktualnosci/wydarzenia/prezydent-rp-podpisal-9-ustaw-2-zawetowal,123465"
       }
     ]
   },
@@ -509,7 +529,7 @@
         "id": 9,
         "name": "Karol Nawrocki",
         "image": "/images/nawrocki.jpg",
-        "value": 10,
+        "value": 11,
         "party": "PiS",
         "term": "2025-08-06"
       }
@@ -582,6 +602,10 @@
       {
         "title": "Niedziela.pl – Prezydent podpisał 5 ustaw; 2 zawetował i jedną skierował do TK w trybie kontroli prewencyjnej (02.07.2026)",
         "url": "https://www.niedziela.pl/artykul/125662/Prezydent-podpisal-5-ustaw"
+      },
+      {
+        "title": "Prezydent.pl – Prezydent podpisał ustawę o pomocy społecznej (druk 2550) i skieruje ją do TK w trybie kontroli następczej (17.07.2026)",
+        "url": "https://www.prezydent.pl/aktualnosci/wydarzenia/prezydent-rp-podpisal-9-ustaw-2-zawetowal,123465"
       },
       {
         "title": "Prezydent.pl – Wnioski do TK (oficjalna sekcja; komunikat z 11.05.2026 zawiera też wniosek ws. ustawy o transporcie kolejowym)",
@@ -702,7 +726,7 @@
         "url": "https://www.polsatnews.pl/wiadomosc/2025-12-03/sejm-zadecyduje-o-prezydenckim-wecie-jest-decyzja-koalicji-w-tej-sprawie/"
       },
       {
-        "title": "Prezydent.pl – Inicjatywy ustawodawcze (oficjalna lista, 22 pozycje – stan na 03.07.2026)",
+        "title": "Prezydent.pl – Inicjatywy ustawodawcze (oficjalna lista, 22 pozycje – stan na 18.07.2026)",
         "url": "https://www.prezydent.pl/prawo/inicjatywy-ustawodawcze"
       },
       {

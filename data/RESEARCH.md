@@ -3,7 +3,8 @@
 This file is a quick-reference for AI research sessions. It summarizes all current values and sources so an AI can compare against new findings and update `presidential-stats.json`.
 
 **Data file to update:** `data/presidential-stats.json`
-**Last full review:** 2026-07-03 (wszystkie 5 kategorii **zweryfikowane enumeratywnie ze źródła kanonicznego** — patrz sekcja „Programmatic verification" na dole; skorygowano: podpisane 213→236, weta 37→39, TK 8→10, inicjatywy 17→22)
+**Last full review:** 2026-07-18 (wszystkie 5 kategorii ponownie zweryfikowane enumeratywnie ze źródła kanonicznego prezydent.pl przez `curl`; jedno nowe wydarzenie od 03.07 — komunikat z 17.07.2026 „podpisał 9 ustaw; 2 zawetował": weta 39→41, podpisane 236→245, TK 10→11; ułaskawienia 4 i inicjatywy 22 bez zmian)
+**Previous full review:** 2026-07-03 (wszystkie 5 kategorii **zweryfikowane enumeratywnie ze źródła kanonicznego** — patrz sekcja „Programmatic verification" na dole; skorygowano: podpisane 213→236, weta 37→39, TK 8→10, inicjatywy 17→22)
 **Last partial update:** 2026-06-11 (weta + podpisane ustawy; ułaskawienia/TK/inicjatywy sprawdzone — bez zmian)
 
 > **WAŻNE (lekcja z 03.07.2026):** liczenie wyłącznie przyrostowe (news z okresu od ostatniego przeglądu) systematycznie gubi pozycje — tak przeoczono 5 inicjatyw i 1 wniosek do TK. Każdy przegląd MUSI kończyć się enumeracją z oficjalnych list prezydent.pl (dostępnych przez `curl` — sekcja na dole) i uzgodnieniem z publicznie podawanymi sumami.
@@ -40,7 +41,7 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 | Komorowski (10-15) | 4 | 930 | 360 | 12 | 26 |
 | Duda (15-20) | 9 | 1066 | 94 | 10 | 31 |
 | Duda (20-25) | 10 | 784 | 52 | 51 | 31 |
-| **Nawrocki (25–)** | **39** | **236** | **4** | **10** | **22** |
+| **Nawrocki (25–)** | **41** | **245** | **4** | **11** | **22** |
 
 ---
 
@@ -71,6 +72,9 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 - 02.07.2026 — 2 weta: ustawa o zapobieganiu zanieczyszczaniu morza przez statki („realizacja Zielonego Ładu", https://www.bankier.pl/wiadomosc/Prezydent-przeciw-ustawie-morskiej-To-realizacja-Zielonego-Ladu-9162917.html) + ustawa o prawach i obowiązkach ucznia / reforma MEN („szkolna prokuratura", https://www.pap.pl/aktualnosci/prezydent-zawetowal-ustawe-o-prawach-i-obowiazkach-ucznia). Komunikat zbiorczy: „podpisał 5 ustaw; 2 zawetował, 1 do TK" (https://www.radiomaryja.pl/informacje/prezydent-karol-nawrocki-podpisal-piec-ustaw-jedna-skierowal-do-tk-a-dwie-zawetowal/)
 - Cross-check: 19.06.2026 prezydent publicznie podał „37 zawetowałem" (Polsat News), 29.06 wPolityce podało 37 — zgodne z naszym licznikiem przed wetami z 02.07.
 
+**New vetoes counted 2026-07-18 (total 41):**
+- 17.07.2026 — 2 weta w komunikacie „podpisał 9 ustaw; 2 zawetował": ustawa o statusie osoby najbliższej w związku i umowie o wspólnym pożyciu (druk 2110) + przepisy wprowadzające tę ustawę (druk 2111) — czyli tzw. związki partnerskie (https://www.prezydent.pl/prawo/ustawy-zawetowane/prezydent-rp-podpisal-9-ustaw-2-zawetowal,123465; cross-check rp.pl art44842161, dorzeczy 916009). Między 02.07 a 17.07 brak innych komunikatów wetujących.
+
 **Search tips:** Nawrocki's veto count changes frequently. Check wetomat.pl for live count, TVN24 and Onet for the latest running tally. Historical values (pre-2025) are stable. Note: wetomat.pl and prezydent.pl block automated fetches (HTTP 403) — verify counts via news coverage of official communiqués ("prezydent podpisał X ustaw; Y zawetował").
 
 ---
@@ -100,9 +104,9 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 | 10.2025 | 24 | 04.2026 | 15 |
 | 11.2025 | 30 | 05.2026 | 12 |
 | 12.2025 | 44 | 06.2026 | 20 (02.06=5, 11.06=7, 19.06=6, 29.06=2) |
-| 01.2026 | 15 | 07.2026 | 5 (wszystkie 02.07) |
+| 01.2026 | 15 | 07.2026 | 14 (02.07=5, 17.07=9) |
 
-**Suma = 236.** Zgadza się co do sztuki z publicznymi kotwicami: „podpisałem 229 ustaw" (prezydent, 19.06; https://www.polsatnews.pl/wiadomosc/2026-06-19/kolejne-ustawy-z-podpisem-prezydenta-nawrocki-zdradza-szczegoly/), 231 po 29.06 (https://wpolityce.pl/polityka/763791-prezydent-nawrocki-podjal-decyzje-ws-dwoch-kolejnych-ustaw), +5 na 02.07 (https://dorzeczy.pl/opinie/909709/prezydent-podpisal-piec-ustaw-sa-zmiany-dla-szkol-energetyki-i-pomorza.html). Uwaga na pułapki parsowania stron miesięcznych: część miesięcy nie ma numeracji (IX, I, V, VII), a w kwietniu numery 10 i 12 są zjedzone przez formatowanie — licz po wzorcu „podpisana <data>" ORAZ po numeracji i bierz spójny wynik.
+**Suma = 245** (aktualizacja 18.07.2026: lipiec 5→14 po komunikacie z 17.07 „podpisał 9 ustaw"). Poprzednia suma 236 (stan na 02.07). Zgadza się co do sztuki z publicznymi kotwicami: „podpisałem 229 ustaw" (prezydent, 19.06; https://www.polsatnews.pl/wiadomosc/2026-06-19/kolejne-ustawy-z-podpisem-prezydenta-nawrocki-zdradza-szczegoly/), 231 po 29.06 (https://wpolityce.pl/polityka/763791-prezydent-nawrocki-podjal-decyzje-ws-dwoch-kolejnych-ustaw), +5 na 02.07 (https://dorzeczy.pl/opinie/909709/prezydent-podpisal-piec-ustaw-sa-zmiany-dla-szkol-energetyki-i-pomorza.html). Uwaga na pułapki parsowania stron miesięcznych: część miesięcy nie ma numeracji (IX, I, V, VII), a w kwietniu numery 10 i 12 są zjedzone przez formatowanie — licz po wzorcu „podpisana <data>" ORAZ po numeracji i bierz spójny wynik.
 
 ---
 
@@ -121,7 +125,7 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 - https://www.prezydent.pl/aktualnosci/prawo-laski/2026 — Official pardon decisions page
 - https://tvn24.pl/polska/prezydent-karol-nawrocki-ulaskawil-trzy-osoby-znamy-uzasadnienia-st8881270 — First pardons (3 people, Feb 2, 2026)
 
-**Search tips:** Pardon data updates less frequently. Historical values very stable. Nawrocki pardoned 3 people on Feb 2, 2026 (his first use of pardon power) + 1 (Weronika Krawczyk, 13.04.2026) = **4**. Checked 03.07.2026 — no new pardons in May–July 2026. Check prezydent.pl/aktualnosci/prawo-laski/ for new decisions.
+**Search tips:** Pardon data updates less frequently. Historical values very stable. Nawrocki pardoned 3 people on Feb 2, 2026 (his first use of pardon power) + 1 (Weronika Krawczyk, 13.04.2026) = **4**. Checked 18.07.2026 — strona prawo-laski/2026 nadal ma tylko 2 wpisy decyzyjne (02.02 i 13.04), brak nowych ułaskawień. Check prezydent.pl/aktualnosci/prawo-laski/ for new decisions.
 
 ---
 
@@ -153,6 +157,7 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 8. 27.04.2026 — ślubowanie nowych sędziów TK (**brak w sekcji wnioski-do-tk**; https://www.rp.pl/sady-i-trybunaly/art44255101-slubowanie-nowych-sedziow-tk-prezydent-skierowal-wniosek-do-trybunalu)
 9. 11.05.2026 — ustawa o zmianie ustawy o transporcie kolejowym, kontrola następcza (**ukryty w komunikacie „podpisał 9 ustaw; 2 zawetował"** — wniosek wymieniony dopiero w treści, nie w tytule! https://www.prezydent.pl/prawo/wnioski-do-tk/prezydent-podpisal-9-ustaw-2-zawetowal,120110)
 10. 02.07.2026 — nowela ustawy o akcyzie (e-papierosy na indukcję), kontrola prewencyjna (https://www.wnp.pl/rynki/rzad-szuka-pieniedzy-prezydent-kieruje-nowele-ustawy-o-akcyzie-do-trybunalu-konstytucyjnego,1077840.html)
+11. 17.07.2026 — ustawa o zmianie ustawy o pomocy społecznej (druk 2550), kontrola **następcza** — prezydent PODPISAŁ ustawę i zapowiedział skierowanie do TK; wniosek ukryty w komunikacie „podpisał 9 ustaw; 2 zawetował" (nie w tytule) i liczony też w podpisanych ustawach (jak transport kolejowy z 11.05). Źródło: https://www.prezydent.pl/prawo/ustawy-zawetowane/prezydent-rp-podpisal-9-ustaw-2-zawetowal,123465
 
 **Search tips:** sekcja prezydent.pl/prawo/wnioski-do-tk jest NIEKOMPLETNA (brakuje w niej KSC i ślubowania sędziów) i zawiera komunikaty zbiorcze, w których wniosek do TK pojawia się tylko w treści. Zawsze czytaj pełną treść komunikatów o podpisaniu ustaw — mogą zawierać wnioski do TK.
 
@@ -200,6 +205,8 @@ This file is a quick-reference for AI research sessions. It summarizes all curre
 20. 06.05.2026 — rynek kryptoaktywów (druk 2528 z 08.05) — **przeoczony w checku 11.06**
 21. 11.06.2026 — świadczenia opieki zdrowotnej finansowane ze środków publicznych (HIV/HCV; ogłoszony przy wecie ustawy o świadczeniach) — **przeoczony**
 22. 29.06.2026 — ustanowienie Dnia Działacza Opozycji Antykomunistycznej i Osoby Represjonowanej
+
+**Re-weryfikacja 18.07.2026:** oficjalna lista nadal ma **22 pozycje** (najnowsza 29.06.2026) — brak nowych inicjatyw w okresie 03–18.07.2026. Bez zmian.
 
 **Weryfikacja przez API Sejmu (dolna granica):** `curl https://api.sejm.gov.pl/sejm/term10/prints` → filtruj tytuły zawierające „przedstawiony przez Prezydenta" i deliveryDate ≥ 2025-08-06. Stan 03.07.2026: 14 druków — druki nadawane z opóźnieniem 1–5 miesięcy, więc API Sejmu służy tylko jako cross-check, nie jako licznik. Licznikiem jest enumeracja oficjalnej listy (patrz sekcja „Programmatic verification").
 
